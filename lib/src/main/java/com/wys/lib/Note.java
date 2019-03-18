@@ -1,6 +1,7 @@
 package com.wys.lib;
 
 import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 /**
@@ -48,11 +49,40 @@ public class Note {
      *进行push和pop，那么每一次都要对后面的元素进行调整。
      */
 
+
+
     /**=================Queue（队列）用法=============**/
 
     /**
-     * 队列是一种特殊的线性表，它只允许在表的前端进行删除操作，而在后端进行插入操作。
-     * 因此，在队列中，最先插入的元素将是
+     * 队列是一种特殊的线性表，它只允许在表的前端进行删除操作，而在后端进行插入操作（即先进先出）。
+     * Queue接口与List、Set同一级别，都是继承了Collection接口。LinkedList实现了Deque接口。
+     *
+     * Queue的实现：https://blog.csdn.net/qq_33524158/article/details/78578370
+     * 1、没有实现阻塞阻塞接口的队列
+     * 2、实现了阻塞接口的队列
+     *
+     * Queue使用是要尽量避免Collection的add和remove方法，而是使用offer来添加元素，poll来
+     * 获取并移除元素。它们的优点是通过返回值可以判断成功与否，add和remove方法在失败的时候会抛出异常，
+     * 如果要使用前端而不移除该元素，使用 element或者peek
      * */
+    public static void initQueue(){
+        Queue<String> queue=new LinkedList();
+        queue.offer("string1");
+        queue.offer("string2");
+        queue.offer("string3");
+        String str=queue.element();
+        System.out.println(queue);
+        System.out.println(str);
+    }
+
+
+
+
+
+
+
+
+
+
 
 }

@@ -105,7 +105,7 @@ public class BinaryTree {
     }
 
     /**
-     * 二叉树层次遍历
+     * 二叉树层次遍历(从顶向下)
      * @param root
      * @return
      */
@@ -130,6 +130,67 @@ public class BinaryTree {
         return wrapList;
     }
 
+    /**
+     * 二叉树层次遍历（从底向上）
+     * @param root
+     * @return
+     */
+    public List<List<Integer>> levelOrderBottom(TreeNode root){
+        Queue<TreeNode> queue=new LinkedList<>();
+        List<List<Integer>> wrapList=new LinkedList<>();
+
+        if (root==null)return wrapList;
+
+        queue.offer(root);
+        while (!queue.isEmpty()){
+            int levelNum = queue.size();
+            List<Integer> subList = new LinkedList<Integer>();
+            for(int i=0; i<levelNum; i++) {
+                if(queue.peek().left != null) queue.offer(queue.peek().left);
+                if(queue.peek().right != null) queue.offer(queue.peek().right);
+                subList.add(queue.poll().val);
+            }
+            ((LinkedList<List<Integer>>) wrapList).addFirst(subList);
+        }
+
+        return wrapList;
+    }
+
+
+    /**
+     * 二叉树的最大深度
+     * @param root
+     * @return
+     */
+    public int maxDepth(TreeNode root){
+        if (root==null) return 0;
+        if (root.left==null&&root.right==null){
+            return 1;
+        }else{
+            return Math.max(maxDepth(root.right),maxDepth(root.left))+1;
+        }
+    }
+
+    /**
+     * 二叉树最小深度
+     * @param root
+     * @return
+     */
+    public int minDepth(TreeNode root){
+        if(root==null) return 0;
+        int leftDepth=minDepth(root.left);
+        int rightDepth=minDepth(root.right);
+
+        if (leftDepth>0&&rightDepth>0){
+            return Math.min(leftDepth,rightDepth)+1;
+        }else if (leftDepth==0){
+            return rightDepth+1;
+        }else if (rightDepth==0){
+            return leftDepth+1;
+        }else{
+            return 1;
+        }
+    }
     /**
      * 二叉树节点
      */
