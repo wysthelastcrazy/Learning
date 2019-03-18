@@ -1,6 +1,6 @@
 package com.wys.lib.implementor_java;
 
-import java.util.LinkedList;
+import java.util.*;
 
 /**
  * Created by yas on 2019/3/14
@@ -32,32 +32,6 @@ public class Rudiments {
         }
         return arr;
     }
-
-    /**
-     * 获取二叉树最大节点
-     * 使用递归
-     * @param root
-     * @return
-     */
-    public TreeNode maxNode(TreeNode root){
-        if (root==null) return null;
-        //第一种实现方式，使用递归
-        TreeNode maxLeft=maxNode(root.left);
-        TreeNode maxRight=maxNode(root.right);
-        if (maxLeft!=null){
-           if (root.val<maxLeft.val){
-               root=maxLeft;
-           }
-       }
-       if (maxRight!=null){
-           if (root.val<maxRight.val){
-               root=maxRight;
-           }
-       }
-       return root;
-
-    }
-
     /**
      * 计算阶乘末尾0的个数
      * https://www.cnblogs.com/kuliuheng/p/4102917.html
@@ -73,14 +47,38 @@ public class Rudiments {
     }
 
     /**
-     * 二叉树节点
+     * 合并有序数组
+     * @param a
+     * @param b
+     * @return
      */
-    class TreeNode{
-        public int val;
-        public TreeNode left,right;
-        public TreeNode(int val){
-            this.val=val;
-            this.left=this.right=null;
+    public int[] mergeSortedArray(int [] a,int[] b){
+        if (a==null)return b;
+        if (b==null)return a;
+
+        HashMap map=new HashMap();
+        map.put("","");
+        int[] arr=new int[a.length+b.length];
+        int i=0,j=0,k=0;
+        while (k<=arr.length-1){
+            if (i<=a.length-1&&j<=b.length-1){
+                if (a[i]<=b[j]){
+                    arr[k]=a[i];
+                    i++;
+                }else {
+                    arr[k]=b[j];
+                    j++;
+                }
+            }else if (j<=b.length-1){
+                arr[k]=b[j];
+                j++;
+            }else if (i<=a.length-1){
+                arr[k]=a[i];
+                i++;
+            }
+            k++;
         }
+        return arr;
     }
+
 }
