@@ -1,4 +1,4 @@
-package com.wys.lib.implementor_java;
+package com.wys.leetcode.tree;
 
 import java.util.*;
 
@@ -191,15 +191,6 @@ public class BinaryTree {
             return 1;
         }
     }
-    /**
-     * 二叉树节点
-     */
-    class TreeNode{
-        public int val;
-        public TreeNode left,right;
-        public TreeNode(int val){
-            this.val=val;
-            this.left=this.right=null;
-        }
-    }
+
+
 }

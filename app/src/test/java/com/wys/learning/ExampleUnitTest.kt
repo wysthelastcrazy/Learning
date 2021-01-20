@@ -1,4 +1,4 @@
-package com.wys.lintcode
+package com.wys.learning
 
 import org.junit.Test
 

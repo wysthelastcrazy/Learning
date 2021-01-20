@@ -1,4 +1,4 @@
-package com.wys.lib;
+package com.wys.leetcode;
 
 import java.util.LinkedList;
 import java.util.Queue;

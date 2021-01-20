@@ -1,4 +1,4 @@
-package com.wys.lib.implementor_java;
+package com.wys.leetcode.linkedList;
 
 /**
  * Created by yas on 2019/3/18

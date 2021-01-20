@@ -1,10 +1,10 @@
-package com.wys.lib.implementor_java;
+package com.wys.leetcode.other;
 
 import java.util.*;
 
 /**
  * Created by yas on 2019/3/14
- * Describe:入门
+ * Describe:排序
  */
 public class Rudiments {
 

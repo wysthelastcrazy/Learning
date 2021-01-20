@@ -1,4 +1,4 @@
-package com.wys.lintcode
+package com.wys.learning
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
