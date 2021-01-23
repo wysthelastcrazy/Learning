@@ -93,21 +93,38 @@ class LeetCode1319_makeConnected {
             if (fx == fy) {
                 return false;
             }
-            //根据具体需求，将合并操作直接写在此方法中，避免重复调用find方法，提升效率
+            mergeInner(fx,fy);
+            return true;
+        }
+
+        private void mergeInner(int fx , int fy){
+            //如果根节点相等，则已经在同一个生成树中，直接返回
+            if (fx == fy){
+                return;
+            }
             if (size[fx] < size[fy]) {
                 int temp = fx;
-                fx = fy;
+                fx =fy;
                 fy = temp;
             }
             parent[fy] = fx;
-            if (size[fx] == size[fy]) {
+            if (size[fx] == size[fy]){
                 //如果深度相同且根节点不同，
                 //则新的根节点深度+1（+1是因为深度相同是，合并之后总深度只增加了一层，
                 // 如果被合并的树深度小，则合并后的树深度不变）
                 //此处rank[fy]++是因为深度相同时，fx合并到fy上
                 size[fy]++;
             }
-            return true;
+        }
+        /**
+         * 合并x，y两个节点所在的生成树
+         * @param x
+         * @param y
+         */
+        public void merge(int x,int y){
+            //先找到两个生成树的根节点
+            int fx = find(x),fy = find(y);
+            mergeInner(fx,fy);
         }
     }
 }
