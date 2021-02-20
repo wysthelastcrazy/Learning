@@ -61,4 +61,50 @@ public class Linked_List {
             return val;
         }
     }
+
+    /**
+     * 删除倒数第k个节点
+     * @param head
+     * @param k
+     */
+    public static void delNode(ListNode head,int k){
+        int size = 0;
+        ListNode startNode = head;
+        while (startNode!=null){
+            size++;
+            startNode = startNode.next;
+        }
+        startNode = head;
+        ListNode pre = startNode;
+        int j = 0;
+        while ((size - j)>k){
+            pre = startNode;
+            startNode = startNode.next;
+            j ++;
+        }
+        pre.next = startNode.next;
+    }
+
+    /**
+     * 删除倒数第k个节点
+     * @param head
+     * @param k
+     */
+    public static void delNode2(ListNode head,int k){
+        ListNode slow = head,fast = head;
+        while (k>0 && fast!=null){
+            fast = fast.next;
+            k--;
+        }
+        System.out.println("fast:"+fast.getVal());
+        while (fast.next!=null){
+            fast = fast.next;
+            slow = slow.next;
+            System.out.println("........");
+        }
+//        System.out.println("fast:"+fast.getVal());
+        System.out.println("slow:"+slow.getVal());
+        slow.next = slow.next.next;
+    }
+
 }
