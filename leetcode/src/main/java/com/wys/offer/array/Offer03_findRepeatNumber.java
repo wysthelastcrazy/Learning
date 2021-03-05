@@ -1,4 +1,4 @@
-package com.wys.offer;
+package com.wys.offer.array;
 
 import java.util.HashMap;
 import java.util.Map;

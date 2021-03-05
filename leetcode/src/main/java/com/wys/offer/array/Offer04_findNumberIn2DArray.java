@@ -1,4 +1,4 @@
-package com.wys.offer;
+package com.wys.offer.array;
 
 /**
  * @author wangyasheng
