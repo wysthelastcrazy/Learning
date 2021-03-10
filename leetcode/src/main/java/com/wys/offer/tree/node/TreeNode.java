@@ -1,4 +1,4 @@
-package com.wys.offer.tree;
+package com.wys.offer.tree.node;
 
 /**
  * @author wangyasheng
