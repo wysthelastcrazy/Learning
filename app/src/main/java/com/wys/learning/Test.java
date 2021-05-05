@@ -6,4 +6,5 @@ package com.wys.learning;
  * @describe:
  */
 public class Test {
+    private String TAG = "Test";
 }
