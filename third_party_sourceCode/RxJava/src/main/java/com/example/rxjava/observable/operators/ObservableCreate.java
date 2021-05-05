@@ -1,6 +1,7 @@
 package com.example.rxjava.observable.operators;
 
-import android.support.annotation.NonNull;
+
+import androidx.annotation.NonNull;
 
 import com.example.rxjava.observable.Observable;
 import com.example.rxjava.observable.ObservableOnSubscribe;

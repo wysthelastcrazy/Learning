@@ -1,11 +1,11 @@
-package com.wys.leetcode.tree;
+package com.wys.leetcode.tree.node;
 
 /**
  * @author wangyasheng
  * @date 2021/1/20
  * @Describe: 二叉树节点
  */
-class TreeNode {
+public class TreeNode {
     public int val;
     public TreeNode left,right;
     public TreeNode(int val){

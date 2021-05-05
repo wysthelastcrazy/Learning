@@ -1,8 +1,9 @@
 package com.example.rxjava.observable.operators;
 
 import android.os.Build;
-import android.support.annotation.NonNull;
-import android.support.annotation.RequiresApi;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 
 import com.example.rxjava.Function;
 import com.example.rxjava.observable.Observable;

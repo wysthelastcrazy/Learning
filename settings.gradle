@@ -1,2 +1,5 @@
+include ':third_party_sourceCode:Okhttp'
+include ':third_party_sourceCode:RxJava'
+include ':AndroidBase'
 include ':geekTime'
 include ':app', ':leetcode'

@@ -46,21 +46,6 @@ public class Linked_List {
         }
         return dummy.next;
     }
-    /**
-     * 单链表节点
-     */
-    public static class ListNode{
-        int val;
-        public ListNode next;
-        public ListNode(int val){
-            this.val=val;
-            next=null;
-        }
-
-        public int getVal() {
-            return val;
-        }
-    }
 
     /**
      * 删除倒数第k个节点
@@ -107,4 +92,19 @@ public class Linked_List {
         slow.next = slow.next.next;
     }
 
+    /**
+     * 单链表节点
+     */
+    public static class ListNode{
+        int val;
+        public ListNode next;
+        public ListNode(int val){
+            this.val=val;
+            next=null;
+        }
+
+        public int getVal() {
+            return val;
+        }
+    }
 }

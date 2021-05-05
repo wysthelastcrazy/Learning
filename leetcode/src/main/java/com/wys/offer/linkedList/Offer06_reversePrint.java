@@ -5,6 +5,7 @@ import com.wys.offer.linkedList.node.ListNode;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.Stack;
 
 /**
  * @author wangyasheng
@@ -45,14 +46,14 @@ public class Offer06_reversePrint {
      */
     public int[] reversePrint2(ListNode head) {
         ListNode curNode = head;
-        LinkedList<Integer> stack = new LinkedList<>();
+        Stack<Integer> stack = new Stack<>();
         while (curNode != null){
-            stack.addLast(head.val);
+            stack.add(head.val);
             curNode = curNode.next;
         }
         int[] res = new int[stack.size()];
         for(int i = 0; i < res.length; i++)
-            res[i] = stack.removeLast();
+            res[i] = stack.pop();
         return res;
     }
 

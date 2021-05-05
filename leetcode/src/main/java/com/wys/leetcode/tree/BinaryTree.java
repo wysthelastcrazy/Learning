@@ -1,5 +1,7 @@
 package com.wys.leetcode.tree;
 
+import com.wys.leetcode.tree.node.TreeNode;
+
 import java.util.*;
 
 /**
@@ -73,14 +75,14 @@ public class BinaryTree {
         List<Integer> mList=new ArrayList<>();
         Stack<TreeNode> stack=new Stack<>();
         while (root!=null||!stack.empty()){
-            if (root!=null){
+            while (root!=null){
                 mList.add(root.val);
                 stack.push(root);
                 root=root.left;
-            }else{
-                root=stack.pop();
-                root=root.right;
             }
+            root=stack.pop();
+            root=root.right;
+
         }
         return mList;
     }

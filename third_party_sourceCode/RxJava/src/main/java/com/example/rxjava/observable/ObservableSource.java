@@ -1,6 +1,7 @@
 package com.example.rxjava.observable;
 
-import android.support.annotation.NonNull;
+
+import androidx.annotation.NonNull;
 
 import com.example.rxjava.obsever.Observer;
 
