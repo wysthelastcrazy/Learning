@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
         //{5,7,9,10,1,3},查找给出value对应的index
 
-
+        //...
 
     }
     public int find(int[] arr, int target){
