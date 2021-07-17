@@ -13,27 +13,27 @@
             android:orientation="horizontal">
 
         <Button
-                android:id="@+id/btn_create_audioRecord"
+                android:id="@+id/btn_all_usb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
-                android:onClick="createRecord"
-                android:text="create"/>
+                android:onClick="getAllUsbDevices"
+                android:text="all_usb"/>
 
         <Button
-                android:id="@+id/btn_start_record"
+                android:id="@+id/btn_camera_usb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
-                android:onClick="startRecord"
-                android:text="start"/>
+                android:onClick="getUsbCamera"
+                android:text="usb_camera"/>
         <Button
-                android:id="@+id/btn_stop_record"
+                android:id="@+id/btn_audio_usb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
-                android:onClick="stopRecord"
-                android:text="stop"/>
+                android:onClick="getUsbAudio"
+                android:text="usb_audio"/>
         <Button
                 android:id="@+id/btn_check_mic"
                 android:layout_width="wrap_content"

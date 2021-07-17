@@ -1,27 +1,19 @@
 package com.wys.learning;
 
+import android.Manifest;
+import android.hardware.usb.UsbDevice;
+import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.MessageQueue;
 import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import com.wys.learning.audio.AudioHelper;
+import com.wys.learning.video.CameraHelperV2;
 
-import io.reactivex.Observable;
-import io.reactivex.ObservableEmitter;
-import io.reactivex.ObservableOnSubscribe;
-import io.reactivex.Scheduler;
-import io.reactivex.annotations.NonNull;
-import io.reactivex.functions.Function;
-import io.reactivex.schedulers.Schedulers;
+import java.util.List;
 
 
 //import com.example.rxjava.Function;
@@ -41,101 +33,78 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Handler handler = new Handler();
-        String s = "30";
-        Log.d("",s.compareTo("3")+"");
+        String[] PERMISSIONS_MEETING = {
+                Manifest.permission.RECORD_AUDIO,
+        };
 
-        //{5,7,9,10,1,3},查找给出value对应的index
-
-        //...
-
-    }
-    public int find(int[] arr, int target){
-
-        int startIndex = 0;
-        int endIndex = arr.length - 1;
-        int sp = endIndex;
-        //1、先查找分割位置
-        while(arr[startIndex] > arr[sp]){
-            sp --;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            requestPermissions(PERMISSIONS_MEETING, 0x100);
         }
-        //分成两个有序数组 arr[startIndex] - arr[sp]和
-        //arr[sp + 1] - arr[endIndex]
-
-        if(arr[startIndex] > target){
-            //在arr[sp + 1] - arr[endIndex]范围查找
-            return find(arr,target,sp+1, endIndex);
-        }else {
-            //在arr[startIndex] - arr[sp]范围查找
-            return find(arr,target,startIndex,sp);
-        }
+        AudioHelper.getInstance().init(this);
+//        CameraHelperV2.getInstance().init(this);
+        UsbDevicesHelper.getInstance().init(this);
     }
 
-    /**
-     * 在指定范围内进行二分查找
-     * @param arr
-     * @param target
-     * @param startIndex
-     * @param endIndex
-     * @return
-     */
-    private int find(int[] arr,int target,int startIndex,int endIndex){
-        while (startIndex < endIndex){
-            int mid = (startIndex + endIndex)/2;
-            if (arr[mid] == target){
-                return mid;
-            }else if(arr[mid] > target){
-                endIndex = mid - 1;
-            }else {
-                startIndex = mid + 1;
+    public void createRecord(View view) {
+        CameraHelperV2.getInstance().getAvailableCameraDevice();
+    }
+
+    public void startRecord(View view) {
+
+    }
+
+    public void stopRecord(View view) {
+
+    }
+
+    public void checkMic(View view) {
+        AudioHelper.getInstance().checkLocalMicEnable(new AudioHelper.ICheckLocalMicEnableCallback() {
+            @Override
+            public void onLocalMicEnable(boolean enable, int code) {
+                Log.d("AudioRecorder","checkMic result: enable = " + enable + ",code = " + code);
+            }
+        });
+    }
+
+    public void getAllUsbDevices(View view) {
+        List<UsbDevice> usbDevices = UsbDevicesHelper.getInstance().getUsbDevices(UsbDevicesHelper.DeviceType.TYPE_ALL);
+        if (usbDevices != null){
+            Log.d(TAG,"[getAllUsbDevices] size:" + usbDevices.size());
+            for (int i = 0; i < usbDevices.size(); i++){
+                UsbDevice device = usbDevices.get(i);
+                Log.d(TAG, "[getAllUsbDevices] all : deviceName = " + device.getDeviceName() + ","
+                        + " deviceClass = " +device.getDeviceClass() + ","
+                        + " deviceId = " +device.getDeviceId() + ","
+                        + " deviceSubclass = " +device.getDeviceSubclass());
             }
         }
-        return  -1;
     }
 
-    /**
-     * 使用HashMap
-     * @param arr
-     * @return
-     */
-    public int notRep(int[] arr){
-        HashMap<Integer,Integer> map = new HashMap<>();
-        for(int i = 0; i < arr.length; i++){
-            if (map.containsKey(arr[i])){
-                map.remove(arr[i]);
-            }else{
-                map.put(arr[i],1);
+    public void getUsbCamera(View view) {
+        List<UsbDevice> usbDevices = UsbDevicesHelper.getInstance().getUsbDevices(UsbDevicesHelper.DeviceType.TYPE_CAMERA);
+        if (usbDevices != null){
+            Log.d(TAG,"[getUsbCamera] size:" + usbDevices.size());
+            for (int i = 0; i < usbDevices.size(); i++){
+                UsbDevice device = usbDevices.get(i);
+                Log.d(TAG, "[getUsbCamera] camera : deviceName = " + device.getDeviceName() + ","
+                        + " deviceClass = " +device.getDeviceClass() + ","
+                        + " deviceId = " +device.getDeviceId() + ","
+                        + " deviceSubclass = " +device.getDeviceSubclass());
             }
         }
-       
-       return -1;
     }
 
-
-
-
-
-
-
-
-
-
-    // 如 123456789123456789 * 56789123456789
-// 已经按照低位到高位转成整数数组
-// a = {9, 8, 7, 6, 5, 4, 3, 2, 1, 9, 8, 7, 6, 5, 4, 3, 2, 1}
-// b = {9, 8, 7, 6, 5, 4, 3, 2, 1, 9, 8, 7, 6, 5}
-    int[] multiply(int[] a, int[] b) {
-        int i = (a[a.length - 1] * b[b.length - 1]) > 10 ? 1 : 0;
-        int size = (a.length - 1) + (b.length - 1) + i + 1;
-        int[] arr = new int[size];
-        for(int j = 0; j < a.length; j++ ){
-            for(int k = 0; k < b.length; k++){
-                int sum = arr[j + k] + (a[j] * b[k]);
-                arr[j + k] =  sum%10;
-
-                arr[j + k +1] = arr[j + k +1] + sum/10 ;
+    public void getUsbAudio(View view) {
+        List<UsbDevice> usbDevices = UsbDevicesHelper.getInstance().getUsbDevices(UsbDevicesHelper.DeviceType.TYPE_AUDIO);
+        if (usbDevices != null){
+            Log.d(TAG,"[getUsbAudio] size:" + usbDevices.size());
+            for (int i = 0; i < usbDevices.size(); i++){
+                UsbDevice device = usbDevices.get(i);
+                Log.d(TAG, "[getUsbAudio] audio : deviceName = " + device.getDeviceName() + ","
+                        + " deviceClass = " +device.getDeviceClass() + ","
+                        + " deviceId = " +device.getDeviceId() + ","
+                        + " deviceSubclass = " +device.getDeviceSubclass());
             }
         }
-        return arr;
     }
 }
