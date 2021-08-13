@@ -3,6 +3,7 @@ package com.example.androidbase;
 import android.content.Context;
 import android.os.Handler;
 import android.os.Message;
+import android.provider.MediaStore;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;

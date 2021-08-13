@@ -11,10 +11,12 @@ import android.hardware.usb.UsbDevice;
 import android.hardware.usb.UsbInterface;
 import android.hardware.usb.UsbManager;
 import android.os.Bundle;
+import android.util.Log;
 
 import java.util.HashMap;
 
 public class MainActivity2 extends AppCompatActivity {
+    private static final String TAG = "MainActivity2";
     //耳机广播
     public static final String TAG_LISTEN = "android.intent.action.HEADSET_PLUG";
     //usb线的广播
@@ -62,10 +64,17 @@ public class MainActivity2 extends AppCompatActivity {
         @Override
         public void onReceive(Context context, Intent intent) {
             String action = intent.getAction();
+
             if (action.equals(TAG_IN)){
                 //外设已经连接
+                UsbDevice usbDevice = (UsbDevice) intent.getParcelableExtra(UsbManager.EXTRA_DEVICE);
+                Log.d(TAG,"attached device:" + usbDevice.getDeviceName());
             }else if (action.equals(TAG_OUT)){
                 //外设已经移除
+                UsbDevice usbDevice = (UsbDevice) intent.getParcelableExtra(UsbManager.EXTRA_DEVICE);
+                Log.d(TAG,"detached device:" + usbDevice.getDeviceName());
+                usbDevice.getVendorId();
+                usbDevice.getProductId();
             }else if (action.equals(TAG_USB)){
                 boolean connected = intent.getExtras().getBoolean("connected");
                 if (connected){

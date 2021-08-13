@@ -34,6 +34,11 @@
                 android:layout_marginLeft="4dp"
                 android:onClick="getUsbAudio"
                 android:text="usb_audio"/>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
         <Button
                 android:id="@+id/btn_check_mic"
                 android:layout_width="wrap_content"
@@ -41,5 +46,52 @@
                 android:onClick="checkMic"
                 android:text="checkMic"/>
     </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
+        <Button
+                android:id="@+id/btn_music_volume_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:onClick="onMusicVolumeUp"
+                android:text="musicVolumeUp"/>
+
+        <Button
+                android:id="@+id/btn_music_volume_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:onClick="onMusicVolumeDown"
+                android:text="musicVolumeDown"
+                tools:ignore="OnClick" />
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/btn_system_volume_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:onClick="onVolumeUp"
+                android:text="volumeUp"/>
+
+        <Button
+                android:id="@+id/btn_system_volume_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:onClick="onVolumeDown"
+                android:text="volumeDown"/>
+    </LinearLayout>
+    <ImageView
+            android:id="@+id/img_test"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_launcher_background"/>
 </LinearLayout>

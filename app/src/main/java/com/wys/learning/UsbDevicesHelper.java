@@ -45,11 +45,11 @@ public class UsbDevicesHelper {
         if (mDeviceMap != null){
             for (UsbDevice usbDevice: mDeviceMap.values()){
                 if (deviceType == DeviceType.TYPE_CAMERA) {
-                    if (isUsbCamera(usbDevice) || isUsbCamera0(usbDevice)) {
+                    if (isUsbCamera(usbDevice)) {
                         usbDeviceList.add(usbDevice);
                     }
                 }else if (deviceType == DeviceType.TYPE_AUDIO){
-                    if (isUsbAudio(usbDevice) || isUsbAudio0(usbDevice)){
+                    if (isUsbAudio(usbDevice)){
                         usbDeviceList.add(usbDevice);
                     }
                 }else if (deviceType == DeviceType.TYPE_ALL){
@@ -109,6 +109,44 @@ public class UsbDevicesHelper {
             if (usbInterface != null && usbInterface.getInterfaceClass() == UsbConstants.USB_CLASS_AUDIO){
                 return true;
             }
+        }
+        return false;
+    }
+
+    /**
+     * 是否为麦克风
+     * 此方法未测试，不确定是否正确起效
+     * @param usbDevice
+     * @return
+     */
+    private boolean isMicrophone(UsbDevice usbDevice){
+        if (usbDevice == null){
+            return false;
+        }
+        int count = usbDevice.getInterfaceCount();
+        for (int i = 0; i < count; i++){
+            UsbInterface usbInterface = usbDevice.getInterface(i);
+            if (usbInterface != null && usbInterface.getInterfaceClass() == UsbConstants.USB_CLASS_AUDIO
+                    && usbInterface.getInterfaceSubclass() == UsbConstants.USB_CLASS_AUDIO){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * 判断是否为小米会议一体机
+     * @param usbDevice
+     * @return
+     */
+    private boolean isMiConferenceBar(UsbDevice usbDevice){
+        if (usbDevice == null){
+            return false;
+        }
+        if ("Mi Conference Bar".equalsIgnoreCase(usbDevice.getManufacturerName())
+                && usbDevice.getDeviceClass() == 202
+                && usbDevice.getDeviceSubclass() == 8){
+            return true;
         }
         return false;
     }

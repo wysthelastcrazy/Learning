@@ -160,6 +160,49 @@ public class AudioHelper {
         });
 
     }
+
+    public void downMusicVolume(){
+//        STREAM_ALARM：手机闹铃的声音
+//        STREAM_MUSIC：手机音乐的声音
+//        STREAM_DTMF：DTMF音调的声音
+//        STREAM_RING：电话铃声的声音
+//        STREAM_NOTFICATION：系统提示的声音
+//        STREAM_SYSTEM：系统的声音
+//        STREAM_VOICE_CALL：语音电话声音
+        AudioManager mAudioManager = (AudioManager) mContext.getSystemService(Context.AUDIO_SERVICE);
+        //打开扬声器
+        mAudioManager.setSpeakerphoneOn(true);
+        int max = mAudioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
+        int volume = mAudioManager.getStreamVolume(AudioManager.STREAM_MUSIC);
+        mAudioManager.adjustStreamVolume(AudioManager.STREAM_MUSIC,AudioManager.ADJUST_LOWER,AudioManager.FLAG_SHOW_UI);
+
+    }
+    public void upMusicVolume(){
+        AudioManager mAudioManager = (AudioManager) mContext.getSystemService(Context.AUDIO_SERVICE);
+        //打开扬声器
+        mAudioManager.setSpeakerphoneOn(true);
+        int max = mAudioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
+        int volume = mAudioManager.getStreamVolume(AudioManager.STREAM_MUSIC);
+        mAudioManager.adjustStreamVolume(AudioManager.STREAM_MUSIC,AudioManager.ADJUST_RAISE,AudioManager.FLAG_SHOW_UI);
+
+    }
+
+    public void upSystemVolume(){
+        AudioManager mAudioManager = (AudioManager) mContext.getSystemService(Context.AUDIO_SERVICE);
+        //打开扬声器
+        mAudioManager.setSpeakerphoneOn(true);
+        int max = mAudioManager.getStreamMaxVolume(AudioManager.STREAM_SYSTEM);
+        int volume = mAudioManager.getStreamVolume(AudioManager.STREAM_SYSTEM);
+        mAudioManager.setStreamVolume(AudioManager.STREAM_SYSTEM,volume+1,AudioManager.FLAG_SHOW_UI);
+    }
+    public void downSystemVolume(){
+        AudioManager mAudioManager = (AudioManager) mContext.getSystemService(Context.AUDIO_SERVICE);
+        //打开扬声器
+        mAudioManager.setSpeakerphoneOn(true);
+        int max = mAudioManager.getStreamMaxVolume(AudioManager.STREAM_SYSTEM);
+        int volume = mAudioManager.getStreamVolume(AudioManager.STREAM_SYSTEM);
+        mAudioManager.setStreamVolume(AudioManager.STREAM_SYSTEM,volume-1,AudioManager.FLAG_SHOW_UI);
+    }
     public interface ICheckLocalMicEnableCallback{
         void onLocalMicEnable(boolean enable,int code);
     }

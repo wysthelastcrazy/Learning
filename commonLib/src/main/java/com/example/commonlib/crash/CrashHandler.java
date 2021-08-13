@@ -18,9 +18,9 @@ import java.util.Date;
 public class CrashHandler implements Thread.UncaughtExceptionHandler {
     private static final String TAG = "CrashHandler";
     private static final boolean DEBUG = true;
-    private static String FILE_PATH = "/CrashTest/log/";
+    private static String FILE_PATH = "/crash/";
     private static final String FILE_NAME = "crash";
-    private static final String FILE_NAME_SUFFIX = ".trace";
+    private static final String FILE_NAME_SUFFIX = ".log";
     private Thread.UncaughtExceptionHandler mDefaultCrashHandler;
     private Context mContext;
     private boolean isInit;
@@ -54,6 +54,7 @@ public class CrashHandler implements Thread.UncaughtExceptionHandler {
         }
     }
     private void dumpExceptionToSDCard(Throwable ex){
+
         File dir = new File(FILE_PATH);
         if (!dir.exists()){
             dir.mkdirs();
