@@ -1,6 +1,45 @@
 package com.example.commonlib.utils;
 
-public class FileSizeUtils {
+import android.text.TextUtils;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class FileUtils {
+    /**
+     * byte[]写文件
+     * @param fileName
+     * @param data
+     * @param append 追加
+     */
+    public static void saveFile(String fileName, byte[] data, boolean append) {
+        if (TextUtils.isEmpty(fileName) || data == null) {
+            return;
+        }
+        if (data != null) {
+            File file = new File(fileName);
+            if (!file.exists()) {
+                file.getParentFile().mkdirs();
+            }
+            try {
+                FileOutputStream fos = new FileOutputStream(file, append);
+                fos.write(data);
+                fos.close();
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    /**
+     * 转化文件大小
+     * @param size
+     * @return
+     */
     public static String getPrintSize(long size) {
         //如果字节数少于1024，则直接以B为单位，否则先除于1024，后3位因太少无意义
         if (size < 1024) {
