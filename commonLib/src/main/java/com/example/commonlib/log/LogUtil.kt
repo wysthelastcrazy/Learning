@@ -33,6 +33,7 @@ object LogUtil {
         rollingPolicy.context = loggerContext
         rollingPolicy.maxHistory = 10
         rollingPolicy.setTotalSizeCap(FileSize.valueOf("20 mb"))
+        rollingPolicy.setCleanHistoryOnStart(true)
         rollingPolicy.start()
 
         rollingFileAppender.rollingPolicy = rollingPolicy
@@ -54,7 +55,7 @@ object LogUtil {
         logcatAppender.encoder = logcatEncoder
         logcatAppender.start()
 
-        val logger: Logger = LoggerFactory.getLogger("MeetingSdk") as Logger
+        val logger: Logger = LoggerFactory.getLogger("LEARNING") as Logger
         logger.addAppender(rollingFileAppender)
         logger.addAppender(logcatAppender)
         logger.level = transLevel(level)

@@ -18,7 +18,9 @@ public class UsbDevicesHelper {
     enum DeviceType{
         TYPE_ALL,
         TYPE_CAMERA,
-        TYPE_AUDIO
+        TYPE_AUDIO,
+        TYPE_SPEAKER,
+        TYPE_MIC
     }
     private Context mContext;
 
@@ -44,18 +46,30 @@ public class UsbDevicesHelper {
         List<UsbDevice> usbDeviceList = new ArrayList<>();
         if (mDeviceMap != null){
             for (UsbDevice usbDevice: mDeviceMap.values()){
-                if (deviceType == DeviceType.TYPE_CAMERA) {
+                if (deviceType == DeviceType.TYPE_ALL){
+                    //全部usb设备
+                    usbDeviceList.add(usbDevice);
+                }else if (deviceType == DeviceType.TYPE_CAMERA){
+                    //usb摄像头
                     if (isUsbCamera(usbDevice)) {
                         usbDeviceList.add(usbDevice);
                     }
                 }else if (deviceType == DeviceType.TYPE_AUDIO){
+                    //usb音频设备（不区分扬声器和麦克风）
                     if (isUsbAudio(usbDevice)){
                         usbDeviceList.add(usbDevice);
                     }
-                }else if (deviceType == DeviceType.TYPE_ALL){
-                    usbDeviceList.add(usbDevice);
+                }else if (deviceType == DeviceType.TYPE_SPEAKER){
+                    //usb扬声器
+                    if (isUsbSpeaker(usbDevice)){
+                        usbDeviceList.add(usbDevice);
+                    }
+                }else if (deviceType == DeviceType.TYPE_MIC){
+                    //usb 麦克风
+                    if (isUsbMicrophone(usbDevice)){
+                        usbDeviceList.add(usbDevice);
+                    }
                 }
-
             }
         }
         return usbDeviceList;
@@ -119,7 +133,7 @@ public class UsbDevicesHelper {
      * @param usbDevice
      * @return
      */
-    private boolean isMicrophone(UsbDevice usbDevice){
+    private boolean isUsbMicrophone(UsbDevice usbDevice){
         if (usbDevice == null){
             return false;
         }
@@ -128,6 +142,21 @@ public class UsbDevicesHelper {
             UsbInterface usbInterface = usbDevice.getInterface(i);
             if (usbInterface != null && usbInterface.getInterfaceClass() == UsbConstants.USB_CLASS_AUDIO
                     && usbInterface.getInterfaceSubclass() == UsbConstants.USB_CLASS_AUDIO){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private boolean isUsbSpeaker(UsbDevice usbDevice){
+        if (usbDevice == null){
+            return false;
+        }
+        int count = usbDevice.getInterfaceCount();
+        for (int i = 0; i < count; i++){
+            UsbInterface usbInterface = usbDevice.getInterface(i);
+            if (usbInterface != null && usbInterface.getInterfaceClass() == UsbConstants.USB_CLASS_AUDIO
+                    && usbInterface.getInterfaceSubclass() == UsbConstants.USB_CLASS_COMM){
                 return true;
             }
         }

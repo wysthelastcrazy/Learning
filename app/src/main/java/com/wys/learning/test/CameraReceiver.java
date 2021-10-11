@@ -10,7 +10,7 @@
 //import com.xiaomi.mitv.tvvideocall.ChatLinkingReceiver;
 //import com.xiaomi.mitv.tvvideocall.log.LogUtil;
 //import com.xiaomi.mitv.tvvideocall.preference.PreferenceHelper;
-//import com.xiaomi.mitv.tvvideocall.rx.Rx;
+//import com.xiaomi.mitv.tvvideocall.rx.com.wys.learning.utils.Rx;
 //import com.xiaomi.mitv.tvvideocall.utils.MiStatUtil;
 //import com.xiaomi.mitv.tvvideocall.utils.ThreadPool;
 //
@@ -51,7 +51,7 @@
 //        LogUtil.d(TAG, "isUsbCamera - " + isUsbCam + "/" + isUsbCam0);
 //
 //        if (isUsbCam || isUsbCam0) {
-//            Rx.async(()->CameraHelper.getNumOfCameras(), numOfCameras-> {
+//            com.wys.learning.utils.Rx.async(()->CameraHelper.getNumOfCameras(), numOfCameras-> {
 //                LogUtil.i(TAG, "camera num is " + numOfCameras);
 //                if (ACTION_USB_DEVICE_DETACHED.equals(action)) {
 //                    dismissLink(context);

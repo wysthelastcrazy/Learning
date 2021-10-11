@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.graphics.Bitmap;
+import android.graphics.SurfaceTexture;
 import android.hardware.usb.UsbConstants;
 import android.hardware.usb.UsbDevice;
 import android.hardware.usb.UsbInterface;
@@ -16,7 +17,10 @@ import android.renderscript.Element;
 import android.renderscript.RenderScript;
 import android.renderscript.ScriptIntrinsicYuvToRGB;
 import android.util.Log;
+import android.view.TextureView;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -26,6 +30,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.commonlib.log.LogUtil;
 import com.wys.learning.audio.AudioHelper;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 
@@ -43,6 +49,8 @@ import android.renderscript.Type.Builder;
 public class MainActivity extends AppCompatActivity {
     private final String TAG = "MainActivity";
     private CameraReceiver receiver;
+    private FrameLayout flContainer;
+    private TextureView textureView;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,10 +73,55 @@ public class MainActivity extends AppCompatActivity {
 
         registerReceiver(receiver,filter);
         LogUtil.INSTANCE.i(TAG,"onCreate++++++++++++++++++++++++");
+        LogUtil.INSTANCE.i(TAG,"date: " + stampToTime(1629699429990L));
+
+        flContainer = findViewById(R.id.fl_container);
+        textureView = new TextureView(this);
+        textureView.setSurfaceTextureListener(new TextureView.SurfaceTextureListener() {
+            @Override
+            public void onSurfaceTextureAvailable(SurfaceTexture surfaceTexture, int i, int i1) {
+                LogUtil.INSTANCE.i(TAG,"onSurfaceTextureAvailable++++++++++++++++++++++++");
+            }
+
+            @Override
+            public void onSurfaceTextureSizeChanged(SurfaceTexture surfaceTexture, int i, int i1) {
+                LogUtil.INSTANCE.i(TAG,"onSurfaceTextureSizeChanged++++++++++++++++++++++++");
+            }
+
+            @Override
+            public boolean onSurfaceTextureDestroyed(SurfaceTexture surfaceTexture) {
+                LogUtil.INSTANCE.i(TAG,"onSurfaceTextureDestroyed++++++++++++++++++++++++");
+                return false;
+            }
+
+            @Override
+            public void onSurfaceTextureUpdated(SurfaceTexture surfaceTexture) {
+                LogUtil.INSTANCE.i(TAG,"onSurfaceTextureUpdated++++++++++++++++++++++++");
+            }
+        });
+
     }
 
+    private void gotoActivity2(){
+        Intent intent = new Intent(this,MainActivity2.class);
+        startActivity(intent);
+    }
+    public String stampToTime(long stamp) {
+        String sd = "";
 
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
+        sd = sdf.format(new Date(stamp)); // 时间戳转换日期
+
+        return sd;
+
+    }
     public void checkMic(View view) {
+        try {
+            Thread.sleep(1000000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         AudioHelper.getInstance().checkLocalMicEnable(new AudioHelper.ICheckLocalMicEnableCallback() {
             @Override
             public void onLocalMicEnable(boolean enable, int code) {
@@ -78,16 +131,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void getAllUsbDevices(View view) {
-        List<UsbDevice> usbDevices = UsbDevicesHelper.getInstance().getUsbDevices(UsbDevicesHelper.DeviceType.TYPE_ALL);
-        if (usbDevices != null){
-            LogUtil.INSTANCE.d(TAG,"[getAllUsbDevices] size:" + usbDevices.size());
-            for (int i = 0; i < usbDevices.size(); i++){
-                UsbDevice device = usbDevices.get(i);
-                LogUtil.INSTANCE.d(TAG,"[getAllUsbDevices] device"+ i +": "+ device);
-                int count = device.getInterfaceCount();
-                LogUtil.INSTANCE.d(TAG,"[getAllUsbDevices] count:" + count);
-            }
-        }
+        gotoActivity2();
+//        List<UsbDevice> usbDevices = UsbDevicesHelper.getInstance().getUsbDevices(UsbDevicesHelper.DeviceType.TYPE_ALL);
+//        if (usbDevices != null){
+//            LogUtil.INSTANCE.d(TAG,"[getAllUsbDevices] size:" + usbDevices.size());
+//            for (int i = 0; i < usbDevices.size(); i++){
+//                UsbDevice device = usbDevices.get(i);
+//                LogUtil.INSTANCE.d(TAG,"[getAllUsbDevices] device"+ i +": "+ device);
+//                int count = device.getInterfaceCount();
+//                LogUtil.INSTANCE.d(TAG,"[getAllUsbDevices] count:" + count);
+//            }
+//        }
     }
 
     public void getUsbCamera(View view) {
@@ -195,6 +249,23 @@ public class MainActivity extends AppCompatActivity {
 
     public void onMusicVolumeDown(View view) {
         AudioHelper.getInstance().downMusicVolume();
+    }
+
+    public void addTextureView(View view) {
+        flContainer.removeAllViews();
+        flContainer.addView(textureView,ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+    }
+
+    public void removeTextureView(View view) {
+        flContainer.removeAllViews();
+    }
+
+    public void gone(View view) {
+        textureView.setVisibility(View.GONE);
+    }
+
+    public void visible(View view) {
+        textureView.setVisibility(View.VISIBLE);
     }
 
     private class CameraReceiver extends BroadcastReceiver {
