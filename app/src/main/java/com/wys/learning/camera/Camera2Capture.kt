@@ -93,6 +93,10 @@ class Camera2Capture(context: Context) : CameraCapture(context) {
         mCameraDevice?.close()
     }
 
+    override fun getCameraOrientation(): Int {
+        return 0
+    }
+
     /**
      * 打开camera
      */

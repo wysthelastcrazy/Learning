@@ -2,18 +2,20 @@ package com.wys.learning
 
 import android.Manifest
 import android.graphics.SurfaceTexture
+import android.opengl.GLES10
+import android.opengl.GLES11
+import android.opengl.GLES20
 import android.os.Build
 import android.os.Bundle
-import android.view.Surface
 import android.view.TextureView
 import android.view.View
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.commonlib.log.LogUtil
-import com.example.commonlib.utils.FileUtils
 import com.wys.learning.camera.Camera1Capture
-import com.wys.learning.camera.Camera2Capture
 import com.wys.learning.camera.CameraCapture
 import com.wys.learning.camera.ICaptureListener
+import java.nio.ByteBuffer
 
 class CameraActivity : AppCompatActivity() {
     companion object{
@@ -23,11 +25,16 @@ class CameraActivity : AppCompatActivity() {
 
     private lateinit var mCameraCapture: CameraCapture
 
+    private lateinit var mImageViewShow: ImageView
+
+    private lateinit var mSurfaceTexture: SurfaceTexture
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_camera)
         requestPermissions()
         mTextureView = findViewById(R.id.camera_preview)
+        mImageViewShow = findViewById(R.id.img_show)
         mTextureView.surfaceTextureListener = PreviewSurfaceTextureListener()
         mCameraCapture = Camera1Capture(this)
         mCameraCapture.setWantedSize(1280,720)
@@ -82,6 +89,19 @@ class CameraActivity : AppCompatActivity() {
         }
 
         override fun onSurfaceTextureUpdated(surfaceTexture: SurfaceTexture) {
+//            val bitmap = mTextureView.bitmap
+//            if (bitmap != null && !bitmap.isRecycled){
+//                val width = bitmap.width
+//                val height = bitmap.height
+//                val size = bitmap.rowBytes * bitmap.height
+//
+//                val byteBuffer = ByteBuffer.allocate(size)
+//                bitmap.copyPixelsToBuffer(byteBuffer)
+//                val data = byteBuffer.array()
+//                LogUtil.d(TAG,"onSurfaceTextureUpdated   data size = ${data.size}")
+//                mImageViewShow.setImageBitmap(bitmap)
+//                bitmap.recycle()
+//            }
         }
 
     }
@@ -91,5 +111,17 @@ class CameraActivity : AppCompatActivity() {
     }
     fun closeCamera(view: View) {
         mCameraCapture?.stop()
+    }
+
+    fun generateTexture(target: Int): Int{
+        val textures = IntArray(1)
+        GLES20.glGenTextures(1,textures,0)
+        val textureId = textures[0]
+        GLES20.glBindTexture(target,textureId)
+        GLES20.glTexParameterf(target, 10241, 9729.0f)
+        GLES20.glTexParameterf(target, 10240, 9729.0f)
+        GLES20.glTexParameterf(target, 10242, 33071.0f)
+        GLES20.glTexParameterf(target, 10243, 33071.0f)
+        return textureId
     }
 }

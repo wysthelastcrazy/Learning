@@ -4,7 +4,7 @@ import android.content.Context
 import android.hardware.Camera
 import android.util.Size
 import com.example.commonlib.log.LogUtil
-import com.wys.learning.utils.Rx
+import com.example.commonlib.utils.Rx
 
 class Camera1Capture(context: Context) : CameraCapture(context) {
     companion object {
@@ -52,6 +52,10 @@ class Camera1Capture(context: Context) : CameraCapture(context) {
         }, {
             onClosed()
         })
+    }
+
+    override fun getCameraOrientation(): Int {
+        return 0
     }
 
     /**open camera**/

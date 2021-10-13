@@ -5,30 +5,44 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".CameraActivity">
-    <FrameLayout
+
+    <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
         <TextureView
                 android:id="@+id/camera_preview"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
-    </FrameLayout>
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+        <ImageView
+                android:id="@+id/img_show"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@mipmap/ic_launcher"/>
+    </LinearLayout>
+
     <LinearLayout
             android:id="@+id/ll_group_01"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
         <Button
                 android:id="@+id/btn_openCamera"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="openCamera"
-                android:text="openCamera"/>
+                android:text="openCamera" />
+
         <Button
                 android:id="@+id/btn_closeCamera"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="closeCamera"
-                android:text="closeCamera"/>
+                android:text="closeCamera" />
     </LinearLayout>
 </RelativeLayout>
