@@ -1,4 +1,4 @@
-package com.wys.learning;
+package com.example.commonlib;
 
 @FunctionalInterface
 public interface Consumer<T> {

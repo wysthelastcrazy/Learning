@@ -1,8 +1,8 @@
-package com.wys.learning.utils
+package com.example.commonlib.utils
 import android.os.Handler
 import android.os.Looper
+import com.example.commonlib.Consumer
 import com.example.commonlib.log.LogUtil
-import com.wys.learning.Consumer
 import java.util.*
 import java.util.concurrent.*
 
