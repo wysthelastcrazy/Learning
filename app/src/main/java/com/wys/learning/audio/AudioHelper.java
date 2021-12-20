@@ -145,6 +145,7 @@ public class AudioHelper {
                         callback.onLocalMicEnable(false,2);
                     }
                     //step3 结束录音并释放资源
+                    audioRecord.stop();
                     audioRecord.release();
                     audioRecord = null;
                 }catch (Exception e){

@@ -9,4 +9,9 @@ interface ICaptureListener {
     fun onStopped()
 
     fun onClosed()
+
+    /**
+     * 预览数据回调
+     */
+    fun onPreviewFrame(frameDate: ByteArray, type: Int, width: Int, height: Int)
 }

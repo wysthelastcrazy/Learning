@@ -179,7 +179,8 @@ abstract class CameraCapture constructor(val context: Context): ICapture {
     /**
      * 预览数据回调
      */
-    fun onPreviewFrame(frameDate: ByteArray){
+    fun onPreviewFrame(frameDate: ByteArray, type: Int, width: Int, height: Int){
+        mCaptureListener?.onPreviewFrame(frameDate,type,width, height)
     }
 
     protected fun calculateSize(sizes: Array<Size?>): Size{
@@ -210,6 +211,5 @@ abstract class CameraCapture constructor(val context: Context): ICapture {
      * 获取摄像头方向
      */
     abstract fun getCameraOrientation(): Int
-
 
 }

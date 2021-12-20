@@ -2,14 +2,17 @@ package com.wys.learning.camera
 
 import android.annotation.SuppressLint
 import android.content.Context
+import android.graphics.ImageFormat
 import android.graphics.SurfaceTexture
 import android.hardware.camera2.*
 import android.hardware.camera2.params.StreamConfigurationMap
+import android.media.ImageReader
 import android.os.Handler
 import android.os.Looper
 import android.util.Range
 import android.view.Surface
 import com.example.commonlib.log.LogUtil
+import com.wys.learning.utils.ImageUtils
 import java.util.*
 
 class Camera2Capture(context: Context) : CameraCapture(context) {
@@ -28,6 +31,41 @@ class Camera2Capture(context: Context) : CameraCapture(context) {
 
     private val mHandler: Handler = Handler(Looper.getMainLooper())
 
+    private var mImageReader: ImageReader? = null
+
+    private var  mYuvBytes: ByteArray? = null
+    private val onImageAvailableListener: ImageReader.OnImageAvailableListener = object : ImageReader.OnImageAvailableListener{
+        override fun onImageAvailable(imageReader: ImageReader?) {
+            val image = imageReader?.acquireNextImage() ?: return
+
+            val width = image.width
+            val height = image.height
+            if (mYuvBytes == null){
+                mYuvBytes = ByteArray(width * height)
+            }
+
+            //YUV_420_888
+            val planes = image.planes
+            for (i in planes.indices) {
+                val iBuffer = planes[i].buffer
+                val size = iBuffer.remaining()
+                LogUtil.i(TAG,"imageFormat = ${image.format}")
+                LogUtil.i(TAG,"size = $size")
+                LogUtil.i(TAG,"pixelStride = ${planes[i].pixelStride}")
+                LogUtil.i(TAG,"rowStride = ${planes[i].rowStride}")
+                LogUtil.i(TAG,"width = $width")
+                LogUtil.i(TAG,"height = $height")
+                LogUtil.i(TAG,"Finished reading data form plane $i")
+            }
+            val imageSize = width * height * 3 / 2
+            val yuv420pBuffer = ByteArray(imageSize)
+            System.arraycopy(ImageUtils.getByteFromImageAsType(image,ImageUtils.COLOR_FormatI420),0,yuv420pBuffer,0,imageSize)
+            image.close()
+            onPreviewFrame(yuv420pBuffer,ImageUtils.COLOR_FormatI420,width, height)
+        }
+
+    }
+
     override fun onOpening() {
         LogUtil.i(TAG, "onOpening++++")
         try {
@@ -40,9 +78,10 @@ class Camera2Capture(context: Context) : CameraCapture(context) {
     override fun onStarting() {
         LogUtil.i(TAG, "onStarting++++")
         if (mSurface == null) {
+            mSurfaceTexture?.setDefaultBufferSize(mActualWidth,mActualHeight)
             mSurface = Surface(mSurfaceTexture)
         }
-        val surfaces = Collections.singletonList(mSurface)
+        val surfaces = Arrays.asList(mSurface,mImageReader?.surface)
         try {
             mCameraDevice?.createCaptureSession(
                 surfaces,
@@ -82,6 +121,10 @@ class Camera2Capture(context: Context) : CameraCapture(context) {
         if (mCaptureSession == null) {
             return
         }
+        if (mImageReader != null){
+            mImageReader?.close()
+            mImageReader = null
+        }
         mCaptureSession?.close()
     }
 
@@ -116,7 +159,8 @@ class Camera2Capture(context: Context) : CameraCapture(context) {
             mActualWidth = size.width
             mActualHeight = size.height
         }
-
+        mImageReader = ImageReader.newInstance(mActualWidth,mActualHeight,ImageFormat.YUV_420_888,1)
+        mImageReader?.setOnImageAvailableListener(onImageAvailableListener,mHandler)
         mCameraManager.openCamera(cameraId, object : CameraDevice.StateCallback() {
             override fun onOpened(camera: CameraDevice) {
                 mCameraDevice = camera
@@ -195,7 +239,7 @@ class Camera2Capture(context: Context) : CameraCapture(context) {
             CameraMetadata.CONTROL_CAPTURE_INTENT_VIDEO_RECORD
         )
         mSurface?.let { builder.addTarget(it) }
-
+        mImageReader?.let { builder.addTarget(it.surface) }
         val captureRequest = builder.build()
 
         mSeqId = mCaptureSession?.setRepeatingRequest(

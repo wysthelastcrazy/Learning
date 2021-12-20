@@ -6,24 +6,20 @@
         android:layout_height="match_parent"
         tools:context=".CameraActivity">
 
-    <LinearLayout
+
+    <TextureView
+            android:id="@+id/camera_preview"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="match_parent" />
 
-        <TextureView
-                android:id="@+id/camera_preview"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1" />
-
-        <ImageView
-                android:id="@+id/img_show"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:src="@mipmap/ic_launcher"/>
-    </LinearLayout>
+    <ImageView
+            android:id="@+id/img_show"
+            android:layout_width="320dp"
+            android:layout_height="180dp"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="center"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
 
     <LinearLayout
             android:id="@+id/ll_group_01"

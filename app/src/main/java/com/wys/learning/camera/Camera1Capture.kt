@@ -1,12 +1,14 @@
 package com.wys.learning.camera
 
 import android.content.Context
+import android.graphics.PixelFormat
 import android.hardware.Camera
 import android.util.Size
 import com.example.commonlib.log.LogUtil
 import com.example.commonlib.utils.Rx
+import com.wys.learning.utils.ImageUtils
 
-class Camera1Capture(context: Context) : CameraCapture(context) {
+class Camera1Capture(context: Context) : CameraCapture(context), Camera.PreviewCallback {
     companion object {
         private const val TAG = "Camera1Capture"
     }
@@ -96,7 +98,11 @@ class Camera1Capture(context: Context) : CameraCapture(context) {
         }
 
         params?.setRecordingHint(true)
+//        params?.previewFormat = PixelFormat.YCbCr_420_SP
+
+//        params?.previewFormat = PixelFormat.
         mCamera?.parameters = params
+        mCamera?.setPreviewCallback(this)
     }
 
     /**
@@ -144,6 +150,7 @@ class Camera1Capture(context: Context) : CameraCapture(context) {
     private fun stopCameraPreview() {
         LogUtil.i(TAG, "stopCameraPreview++++")
         Rx.catchAll {
+            mCamera?.setPreviewCallback(null)
             mCamera?.stopPreview()
         }
         try {
@@ -166,6 +173,12 @@ class Camera1Capture(context: Context) : CameraCapture(context) {
         }
         mCamera = null
         LogUtil.i(TAG, "release camera -- done")
+    }
+
+    override fun onPreviewFrame(byte: ByteArray?, camera: Camera?) {
+        if (byte != null) {
+            onPreviewFrame(byte, ImageUtils.COLOR_FormatNV21,mActualWidth, mActualHeight)
+        }
     }
 
 }

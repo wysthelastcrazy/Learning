@@ -7,5 +7,22 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="CustomAnimTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/customAnimation</item>
+    </style>
 
+    <style name="customAnimation">
+        <item name="android:activityOpenEnterAnimation">@anim/popwin_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/popwin_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/popwin_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/popwin_out</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
 </resources>
