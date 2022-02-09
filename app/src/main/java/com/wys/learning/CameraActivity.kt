@@ -17,6 +17,7 @@ import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.commonlib.log.LogUtil
 import com.example.commonlib.utils.Rx
+import com.wys.learning.camera.Camera1Capture
 import com.wys.learning.camera.Camera2Capture
 import com.wys.learning.camera.CameraCapture
 import com.wys.learning.camera.ICaptureListener
@@ -44,7 +45,7 @@ class CameraActivity : AppCompatActivity() {
         mTextureView = findViewById(R.id.camera_preview)
         mImageViewShow = findViewById(R.id.img_show)
         mTextureView.surfaceTextureListener = PreviewSurfaceTextureListener()
-        mCameraCapture = Camera2Capture(this)
+        mCameraCapture = Camera1Capture(this)
         mCameraCapture.setWantedSize(1280,720)
         mCameraCapture.setFacing(true)
         mCameraCapture.mCaptureListener = object: ICaptureListener{
@@ -68,18 +69,19 @@ class CameraActivity : AppCompatActivity() {
             }
 
             override fun onPreviewFrame(frameDate: ByteArray, type: Int, width: Int, height: Int) {
-                Rx.runUI{
-                    val bitamp = yuvToBitmap2(frameDate,type, width,height)
-                    mImageViewShow.setImageBitmap(bitamp)
-                }
+//                Rx.runUI{
+//                    val bitamp = yuvToBitmap2(frameDate,type, width,height)
+//                    mImageViewShow.setImageBitmap(bitamp)
+//                }
             }
 
         }
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
-        mOrientationListener.enable()
+//        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
+//        mOrientationListener.enable()
 
         val lameVersion = LameUtils.getLameVersion()
         Log.d(TAG,"onCreate lameVersion = $lameVersion")
+
     }
     private fun requestPermissions(){
         val permissions = arrayOf(

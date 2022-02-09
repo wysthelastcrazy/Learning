@@ -93,7 +93,7 @@ class Camera1Capture(context: Context) : CameraCapture(context), Camera.PreviewC
             val size = calculateSize(sizes)
             mActualWidth = size.width
             mActualHeight = size.height
-
+            LogUtil.i(TAG,"openCamera preview size：$size")
             params.setPreviewSize(size.width,size.height)
         }
 
