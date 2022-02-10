@@ -1,0 +1,562 @@
+[
+  {
+    "level": "INFO",
+    "message": "Start JSON generation. Platform version: 21 min SDK version: arm64-v8a",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "rebuilding JSON D:\\workspace\\Learning\\libyuv\\.cxx\\cmake\\release\\arm64-v8a\\android_gradle_build.json due to:",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "- expected json D:\\workspace\\Learning\\libyuv\\.cxx\\cmake\\release\\arm64-v8a\\android_gradle_build.json file is not present, will remove stale json folder",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "- missing previous command file D:\\workspace\\Learning\\libyuv\\.cxx\\cmake\\release\\arm64-v8a\\build_command.txt, will remove stale json folder",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "- command changed from previous, will remove stale json folder",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "created folder \u0027D:\\workspace\\Learning\\libyuv\\.cxx\\cmake\\release\\arm64-v8a\u0027",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "executing cmake Executable : D:\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\cmake.exe\narguments : \n-HD:\\workspace\\Learning\\libyuv\\src\\main\\cpp\n-DCMAKE_FIND_ROOT_PATH\u003dD:\\workspace\\Learning\\libyuv\\.cxx\\cmake\\release\\prefab\\arm64-v8a\\prefab\n-DCMAKE_BUILD_TYPE\u003dRelease\n-DCMAKE_TOOLCHAIN_FILE\u003dD:\\Android\\Sdk\\ndk-bundle\\build\\cmake\\android.toolchain.cmake\n-DANDROID_ABI\u003darm64-v8a\n-DANDROID_NDK\u003dD:\\Android\\Sdk\\ndk-bundle\n-DANDROID_PLATFORM\u003dandroid-21\n-DCMAKE_ANDROID_ARCH_ABI\u003darm64-v8a\n-DCMAKE_ANDROID_NDK\u003dD:\\Android\\Sdk\\ndk-bundle\n-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dD:\\workspace\\Learning\\libyuv\\build\\intermediates\\cmake\\release\\obj\\arm64-v8a\n-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003dD:\\workspace\\Learning\\libyuv\\build\\intermediates\\cmake\\release\\obj\\arm64-v8a\n-DCMAKE_MAKE_PROGRAM\u003dD:\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe\n-DCMAKE_SYSTEM_NAME\u003dAndroid\n-DCMAKE_SYSTEM_VERSION\u003d21\n-BD:\\workspace\\Learning\\libyuv\\.cxx\\cmake\\release\\arm64-v8a\n-GNinja\njvmArgs : \n\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "[\u003d\u003d \"CMake Server\" \u003d\u003d[\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"supportedProtocolVersions\":[{\"isExperimental\":true,\"major\":1,\"minor\":1}],\"type\":\"hello\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "]\u003d\u003d \"CMake Server\" \u003d\u003d]\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\n  \"type\": \"handshake\",\n  \"cookie\": \"gradle-cmake-cookie\",\n  \"protocolVersion\": {\n    \"isExperimental\": true,\n    \"major\": 1,\n    \"minor\": 1\n  },\n  \"sourceDirectory\": \"D:/workspace/Learning/libyuv/src/main/cpp\",\n  \"buildDirectory\": \"D:/workspace/Learning/libyuv/.cxx/cmake/release/arm64-v8a\",\n  \"generator\": \"Ninja\"\n}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"gradle-cmake-cookie\",\"inReplyTo\":\"handshake\",\"type\":\"reply\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\n  \"type\": \"configure\",\n  \"cacheArguments\": [\n    \"\",\n    \"-DCMAKE_FIND_ROOT_PATH\\u003dD:\\\\workspace\\\\Learning\\\\libyuv\\\\.cxx\\\\cmake\\\\release\\\\prefab\\\\arm64-v8a\\\\prefab\",\n    \"-DCMAKE_BUILD_TYPE\\u003dRelease\",\n    \"-DCMAKE_TOOLCHAIN_FILE\\u003dD:\\\\Android\\\\Sdk\\\\ndk-bundle\\\\build\\\\cmake\\\\android.toolchain.cmake\",\n    \"-DANDROID_ABI\\u003darm64-v8a\",\n    \"-DANDROID_NDK\\u003dD:\\\\Android\\\\Sdk\\\\ndk-bundle\",\n    \"-DANDROID_PLATFORM\\u003dandroid-21\",\n    \"-DCMAKE_ANDROID_ARCH_ABI\\u003darm64-v8a\",\n    \"-DCMAKE_ANDROID_NDK\\u003dD:\\\\Android\\\\Sdk\\\\ndk-bundle\",\n    \"-DCMAKE_EXPORT_COMPILE_COMMANDS\\u003dON\",\n    \"-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\\u003dD:\\\\workspace\\\\Learning\\\\libyuv\\\\build\\\\intermediates\\\\cmake\\\\release\\\\obj\\\\arm64-v8a\",\n    \"-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\\u003dD:\\\\workspace\\\\Learning\\\\libyuv\\\\build\\\\intermediates\\\\cmake\\\\release\\\\obj\\\\arm64-v8a\",\n    \"-DCMAKE_MAKE_PROGRAM\\u003dD:\\\\Android\\\\Sdk\\\\cmake\\\\3.10.2.4988404\\\\bin\\\\ninja.exe\",\n    \"-DCMAKE_SYSTEM_NAME\\u003dAndroid\",\n    \"-DCMAKE_SYSTEM_VERSION\\u003d21\"\n  ]\n}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"CMake Warning at D:/Android/Sdk/ndk-bundle/build/cmake/android.toolchain.cmake:449 (message):\\n  An old version of CMake is being used that cannot automatically detect\\n  compiler attributes.  Compiler identification is being bypassed.  Some\\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\\n  CMake\u0027s built-in compiler identification.\\nCall Stack (most recent call first):\\n  D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake:94 (include)\\n  CMakeLists.txt:7 (project)\\n\\n\",\"title\":\"Warning\",\"type\":\"message\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "WARN",
+    "message": "CMake Warning at D:/Android/Sdk/ndk-bundle/build/cmake/android.toolchain.cmake:449 (message):\r\n  An old version of CMake is being used that cannot automatically detect\r\n  compiler attributes.  Compiler identification is being bypassed.  Some\r\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\r\n  CMake\u0027s built-in compiler identification.\r\nCall Stack (most recent call first):\r\n  D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake:94 (include)\r\n  CMakeLists.txt:7 (project)\r\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Check for working C compiler: D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe\",\"type\":\"message\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "Check for working C compiler: D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"CMake Warning at D:/Android/Sdk/ndk-bundle/build/cmake/android.toolchain.cmake:449 (message):\\n  An old version of CMake is being used that cannot automatically detect\\n  compiler attributes.  Compiler identification is being bypassed.  Some\\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\\n  CMake\u0027s built-in compiler identification.\\nCall Stack (most recent call first):\\n  D:/workspace/Learning/libyuv/.cxx/cmake/release/arm64-v8a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\\n  D:/workspace/Learning/libyuv/.cxx/cmake/release/arm64-v8a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\\n\\n\",\"title\":\"Warning\",\"type\":\"message\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "WARN",
+    "message": "CMake Warning at D:/Android/Sdk/ndk-bundle/build/cmake/android.toolchain.cmake:449 (message):\r\n  An old version of CMake is being used that cannot automatically detect\r\n  compiler attributes.  Compiler identification is being bypassed.  Some\r\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\r\n  CMake\u0027s built-in compiler identification.\r\nCall Stack (most recent call first):\r\n  D:/workspace/Learning/libyuv/.cxx/cmake/release/arm64-v8a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\r\n  D:/workspace/Learning/libyuv/.cxx/cmake/release/arm64-v8a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\r\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":33,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Check for working C compiler: D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe -- works\",\"type\":\"message\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "Check for working C compiler: D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe -- works",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting C compiler ABI info\",\"type\":\"message\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "Detecting C compiler ABI info",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":65,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting C compiler ABI info - done\",\"type\":\"message\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "Detecting C compiler ABI info - done",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting C compile features\",\"type\":\"message\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "Detecting C compile features",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":96,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":126,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":155,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting C compile features - done\",\"type\":\"message\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "Detecting C compile features - done",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Check for working CXX compiler: D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe\",\"type\":\"message\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "Check for working CXX compiler: D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":184,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Check for working CXX compiler: D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe -- works\",\"type\":\"message\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "Check for working CXX compiler: D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe -- works",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting CXX compiler ABI info\",\"type\":\"message\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "Detecting CXX compiler ABI info",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":211,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting CXX compiler ABI info - done\",\"type\":\"message\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "Detecting CXX compiler ABI info - done",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting CXX compile features\",\"type\":\"message\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "Detecting CXX compile features",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":237,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":262,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":287,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":311,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting CXX compile features - done\",\"type\":\"message\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "Detecting CXX compile features - done",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":334,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Could NOT find JPEG (missing: JPEG_LIBRARY JPEG_INCLUDE_DIR) \",\"type\":\"message\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "Could NOT find JPEG (missing: JPEG_LIBRARY JPEG_INCLUDE_DIR) ",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"CMake Warning (dev) at libyuv/CMakeLists.txt:45 (if):\\n  Policy CMP0064 is not set: Support new TEST if() operator.  Run \\\"cmake\\n  --help-policy CMP0064\\\" for policy details.  Use the cmake_policy command to\\n  set the policy and suppress this warning.\\n\\n  TEST will be interpreted as an operator when the policy is set to NEW.\\n  Since the policy is not set the OLD behavior will be used.\\nThis warning is for project developers.  Use -Wno-dev to suppress it.\\n\",\"title\":\"Warning\",\"type\":\"message\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "WARN",
+    "message": "CMake Warning (dev) at D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\libyuv\\CMakeLists.txt:45 (if):\r\n  Policy CMP0064 is not set: Support new TEST if() operator.  Run \"cmake\r\n  --help-policy CMP0064\" for policy details.  Use the cmake_policy command to\r\n  set the policy and suppress this warning.\r\n\r\n  TEST will be interpreted as an operator when the policy is set to NEW.\r\n  Since the policy is not set the OLD behavior will be used.\r\nThis warning is for project developers.  Use -Wno-dev to suppress it.",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Building ver.: 0.0.\",\"type\":\"message\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "Building ver.: 0.0.",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Packaging for: amd-64\",\"type\":\"message\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "Packaging for: amd-64",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":950,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":1000,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Configuring done\",\"type\":\"message\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "Configuring done",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"type\":\"reply\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"type\":\"compute\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"compute\",\"progressCurrent\":500,\"progressMaximum\":1000,\"progressMessage\":\"Generating\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"compute\",\"progressCurrent\":1000,\"progressMaximum\":1000,\"progressMessage\":\"Generating\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"compute\",\"message\":\"Generating done\",\"type\":\"message\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "Generating done",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"compute\",\"type\":\"reply\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"type\":\"cmakeInputs\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"buildFiles\":[{\"isCMake\":true,\"isTemporary\":false,\"sources\":[\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystem.cmake.in\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInitialize.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Initialize.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCCompiler.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompiler.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine-C.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android/Determine-Compiler.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeFindBinUtils.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-FindBinUtils.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompiler.cmake.in\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCXXCompiler.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompiler.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine-CXX.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android/Determine-Compiler.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeFindBinUtils.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-FindBinUtils.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompiler.cmake.in\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInformation.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeGenericSystem.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Linux.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/UnixPaths.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCInformation.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/GNU.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-C.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCCompiler.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCompilerCommon.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompilerABI.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeParseImplicitLinkInfo.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompilerABI.c\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompileFeatures.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Internal/FeatureTesting.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompiler.cmake.in\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXInformation.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-CXX.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCXXCompiler.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCompilerCommon.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompilerABI.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeParseImplicitLinkInfo.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompileFeatures.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Internal/FeatureTesting.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompiler.cmake.in\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindJPEG.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindPackageMessage.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CPack.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CPackComponent.cmake\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Templates/CPackConfig.cmake.in\",\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Templates/CPackConfig.cmake.in\"]},{\"isCMake\":false,\"isTemporary\":false,\"sources\":[\"CMakeLists.txt\",\"D:/Android/Sdk/ndk-bundle/build/cmake/android.toolchain.cmake\",\"D:/Android/Sdk/ndk-bundle/build/cmake/platforms.cmake\",\"D:/Android/Sdk/ndk-bundle/build/cmake/compiler_id.cmake\",\"D:/Android/Sdk/ndk-bundle/build/cmake/android.toolchain.cmake\",\"libyuv/CMakeLists.txt\",\"libyuv/CM_linux_packages.cmake\"]},{\"isCMake\":false,\"isTemporary\":true,\"sources\":[\"../../../.cxx/cmake/release/arm64-v8a/CMakeFiles/3.10.2/CMakeSystem.cmake\",\"../../../.cxx/cmake/release/arm64-v8a/CMakeFiles/3.10.2/CMakeCCompiler.cmake\",\"../../../.cxx/cmake/release/arm64-v8a/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake\",\"../../../.cxx/cmake/release/arm64-v8a/CMakeFiles/feature_tests.c\",\"../../../.cxx/cmake/release/arm64-v8a/CMakeFiles/feature_tests.c\",\"../../../.cxx/cmake/release/arm64-v8a/CMakeFiles/feature_tests.c\",\"../../../.cxx/cmake/release/arm64-v8a/CMakeFiles/3.10.2/CMakeCCompiler.cmake\",\"../../../.cxx/cmake/release/arm64-v8a/CMakeFiles/feature_tests.cxx\",\"../../../.cxx/cmake/release/arm64-v8a/CMakeFiles/feature_tests.cxx\",\"../../../.cxx/cmake/release/arm64-v8a/CMakeFiles/feature_tests.cxx\",\"../../../.cxx/cmake/release/arm64-v8a/CMakeFiles/feature_tests.cxx\",\"../../../.cxx/cmake/release/arm64-v8a/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake\"]}],\"cmakeRootDirectory\":\"D:/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10\",\"cookie\":\"\",\"inReplyTo\":\"cmakeInputs\",\"sourceDirectory\":\"D:/workspace/Learning/libyuv/src/main/cpp\",\"type\":\"reply\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"type\":\"codemodel\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"configurations\":[{\"name\":\"Release\",\"projects\":[{\"buildDirectory\":\"D:/workspace/Learning/libyuv/.cxx/cmake/release/arm64-v8a/build\",\"name\":\"YUV\",\"sourceDirectory\":\"D:/workspace/Learning/libyuv/src/main/cpp/libyuv\",\"targets\":[{\"artifacts\":[\"D:/workspace/Learning/libyuv/build/intermediates/cmake/release/obj/arm64-v8a/yuvconvert\"],\"buildDirectory\":\"D:/workspace/Learning/libyuv/.cxx/cmake/release/arm64-v8a/build\",\"fileGroups\":[{\"compileFlags\":\"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE\u003d2 -Wformat -Werror\u003dformat-security   -O2 -DNDEBUG  -fPIE  \",\"includePath\":[{\"path\":\"D:/workspace/Learning/libyuv/src/main/cpp/libyuv/include\"}],\"isGenerated\":false,\"language\":\"CXX\",\"sources\":[\"util/yuvconvert.cc\"]}],\"fullName\":\"yuvconvert\",\"linkFlags\":\"-Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id\u003dsha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections\",\"linkLanguageFlags\":\"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE\u003d2 -Wformat -Werror\u003dformat-security   -O2 -DNDEBUG\",\"linkLibraries\":\"libyuv.a -latomic -lm\",\"linkerLanguage\":\"CXX\",\"name\":\"yuvconvert\",\"sourceDirectory\":\"D:/workspace/Learning/libyuv/src/main/cpp/libyuv\",\"sysroot\":\"D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot\",\"type\":\"EXECUTABLE\"},{\"artifacts\":[\"D:/workspace/Learning/libyuv/.cxx/cmake/release/arm64-v8a/build/libyuv.a\"],\"buildDirectory\":\"D:/workspace/Learning/libyuv/.cxx/cmake/release/arm64-v8a/build\",\"fileGroups\":[{\"compileFlags\":\"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE\u003d2 -Wformat -Werror\u003dformat-security   -O2 -DNDEBUG  -fPIC  \",\"includePath\":[{\"path\":\"D:/workspace/Learning/libyuv/src/main/cpp/libyuv/include\"}],\"isGenerated\":false,\"language\":\"CXX\",\"sources\":[\"source/compare.cc\",\"source/compare_common.cc\",\"source/compare_gcc.cc\",\"source/compare_mmi.cc\",\"source/compare_msa.cc\",\"source/compare_neon.cc\",\"source/compare_neon64.cc\",\"source/compare_win.cc\",\"source/convert.cc\",\"source/convert_argb.cc\",\"source/convert_from.cc\",\"source/convert_from_argb.cc\",\"source/convert_jpeg.cc\",\"source/convert_to_argb.cc\",\"source/convert_to_i420.cc\",\"source/cpu_id.cc\",\"source/mjpeg_decoder.cc\",\"source/mjpeg_validate.cc\",\"source/planar_functions.cc\",\"source/rotate.cc\",\"source/rotate_any.cc\",\"source/rotate_argb.cc\",\"source/rotate_common.cc\",\"source/rotate_gcc.cc\",\"source/rotate_mmi.cc\",\"source/rotate_msa.cc\",\"source/rotate_neon.cc\",\"source/rotate_neon64.cc\",\"source/rotate_win.cc\",\"source/row_any.cc\",\"source/row_common.cc\",\"source/row_gcc.cc\",\"source/row_mmi.cc\",\"source/row_msa.cc\",\"source/row_neon.cc\",\"source/row_neon64.cc\",\"source/row_win.cc\",\"source/scale.cc\",\"source/scale_any.cc\",\"source/scale_argb.cc\",\"source/scale_common.cc\",\"source/scale_gcc.cc\",\"source/scale_mmi.cc\",\"source/scale_msa.cc\",\"source/scale_neon.cc\",\"source/scale_neon64.cc\",\"source/scale_uv.cc\",\"source/scale_win.cc\",\"source/video_common.cc\"]}],\"fullName\":\"libyuv.a\",\"linkerLanguage\":\"CXX\",\"name\":\"yuv\",\"sourceDirectory\":\"D:/workspace/Learning/libyuv/src/main/cpp/libyuv\",\"sysroot\":\"D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot\",\"type\":\"STATIC_LIBRARY\"},{\"artifacts\":[\"D:/workspace/Learning/libyuv/build/intermediates/cmake/release/obj/arm64-v8a/libyuv.so\"],\"buildDirectory\":\"D:/workspace/Learning/libyuv/.cxx/cmake/release/arm64-v8a/build\",\"fileGroups\":[{\"compileFlags\":\"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE\u003d2 -Wformat -Werror\u003dformat-security   -O2 -DNDEBUG  -fPIC  \",\"defines\":[\"yuv_shared_EXPORTS\"],\"includePath\":[{\"path\":\"D:/workspace/Learning/libyuv/src/main/cpp/libyuv/include\"}],\"isGenerated\":false,\"language\":\"CXX\",\"sources\":[\"source/compare.cc\",\"source/compare_common.cc\",\"source/compare_gcc.cc\",\"source/compare_mmi.cc\",\"source/compare_msa.cc\",\"source/compare_neon.cc\",\"source/compare_neon64.cc\",\"source/compare_win.cc\",\"source/convert.cc\",\"source/convert_argb.cc\",\"source/convert_from.cc\",\"source/convert_from_argb.cc\",\"source/convert_jpeg.cc\",\"source/convert_to_argb.cc\",\"source/convert_to_i420.cc\",\"source/cpu_id.cc\",\"source/mjpeg_decoder.cc\",\"source/mjpeg_validate.cc\",\"source/planar_functions.cc\",\"source/rotate.cc\",\"source/rotate_any.cc\",\"source/rotate_argb.cc\",\"source/rotate_common.cc\",\"source/rotate_gcc.cc\",\"source/rotate_mmi.cc\",\"source/rotate_msa.cc\",\"source/rotate_neon.cc\",\"source/rotate_neon64.cc\",\"source/rotate_win.cc\",\"source/row_any.cc\",\"source/row_common.cc\",\"source/row_gcc.cc\",\"source/row_mmi.cc\",\"source/row_msa.cc\",\"source/row_neon.cc\",\"source/row_neon64.cc\",\"source/row_win.cc\",\"source/scale.cc\",\"source/scale_any.cc\",\"source/scale_argb.cc\",\"source/scale_common.cc\",\"source/scale_gcc.cc\",\"source/scale_mmi.cc\",\"source/scale_msa.cc\",\"source/scale_neon.cc\",\"source/scale_neon64.cc\",\"source/scale_uv.cc\",\"source/scale_win.cc\",\"source/video_common.cc\"]}],\"fullName\":\"libyuv.so\",\"linkFlags\":\"-Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id\u003dsha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments\",\"linkLibraries\":\"-latomic -lm\",\"linkerLanguage\":\"CXX\",\"name\":\"yuv_shared\",\"sourceDirectory\":\"D:/workspace/Learning/libyuv/src/main/cpp/libyuv\",\"sysroot\":\"D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot\",\"type\":\"SHARED_LIBRARY\"}]},{\"buildDirectory\":\"D:/workspace/Learning/libyuv/.cxx/cmake/release/arm64-v8a\",\"name\":\"libyuv\",\"sourceDirectory\":\"D:/workspace/Learning/libyuv/src/main/cpp\",\"targets\":[{\"artifacts\":[\"D:/workspace/Learning/libyuv/build/intermediates/cmake/release/obj/arm64-v8a/yuvconvert\"],\"buildDirectory\":\"D:/workspace/Learning/libyuv/.cxx/cmake/release/arm64-v8a/build\",\"fileGroups\":[{\"compileFlags\":\"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE\u003d2 -Wformat -Werror\u003dformat-security   -O2 -DNDEBUG  -fPIE  \",\"includePath\":[{\"path\":\"D:/workspace/Learning/libyuv/src/main/cpp/libyuv/include\"}],\"isGenerated\":false,\"language\":\"CXX\",\"sources\":[\"util/yuvconvert.cc\"]}],\"fullName\":\"yuvconvert\",\"linkFlags\":\"-Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id\u003dsha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections\",\"linkLanguageFlags\":\"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE\u003d2 -Wformat -Werror\u003dformat-security   -O2 -DNDEBUG\",\"linkLibraries\":\"libyuv.a -latomic -lm\",\"linkerLanguage\":\"CXX\",\"name\":\"yuvconvert\",\"sourceDirectory\":\"D:/workspace/Learning/libyuv/src/main/cpp/libyuv\",\"sysroot\":\"D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot\",\"type\":\"EXECUTABLE\"},{\"artifacts\":[\"D:/workspace/Learning/libyuv/build/intermediates/cmake/release/obj/arm64-v8a/libyuv_utils.so\"],\"buildDirectory\":\"D:/workspace/Learning/libyuv/.cxx/cmake/release/arm64-v8a\",\"fileGroups\":[{\"compileFlags\":\"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE\u003d2 -Wformat -Werror\u003dformat-security   -O2 -DNDEBUG  -fPIC  \",\"defines\":[\"yuv_utils_EXPORTS\"],\"includePath\":[{\"path\":\"D:/workspace/Learning/libyuv/src/main/cpp/libyuv/include\"}],\"isGenerated\":false,\"language\":\"CXX\",\"sources\":[\"YuvJni.cpp\"]}],\"fullName\":\"libyuv_utils.so\",\"linkFlags\":\"-Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id\u003dsha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments\",\"linkLibraries\":\"build\\\\libyuv.a -llog -latomic -lm\",\"linkerLanguage\":\"CXX\",\"name\":\"yuv_utils\",\"sourceDirectory\":\"D:/workspace/Learning/libyuv/src/main/cpp\",\"sysroot\":\"D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot\",\"type\":\"SHARED_LIBRARY\"},{\"artifacts\":[\"D:/workspace/Learning/libyuv/.cxx/cmake/release/arm64-v8a/build/libyuv.a\"],\"buildDirectory\":\"D:/workspace/Learning/libyuv/.cxx/cmake/release/arm64-v8a/build\",\"fileGroups\":[{\"compileFlags\":\"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE\u003d2 -Wformat -Werror\u003dformat-security   -O2 -DNDEBUG  -fPIC  \",\"includePath\":[{\"path\":\"D:/workspace/Learning/libyuv/src/main/cpp/libyuv/include\"}],\"isGenerated\":false,\"language\":\"CXX\",\"sources\":[\"source/compare.cc\",\"source/compare_common.cc\",\"source/compare_gcc.cc\",\"source/compare_mmi.cc\",\"source/compare_msa.cc\",\"source/compare_neon.cc\",\"source/compare_neon64.cc\",\"source/compare_win.cc\",\"source/convert.cc\",\"source/convert_argb.cc\",\"source/convert_from.cc\",\"source/convert_from_argb.cc\",\"source/convert_jpeg.cc\",\"source/convert_to_argb.cc\",\"source/convert_to_i420.cc\",\"source/cpu_id.cc\",\"source/mjpeg_decoder.cc\",\"source/mjpeg_validate.cc\",\"source/planar_functions.cc\",\"source/rotate.cc\",\"source/rotate_any.cc\",\"source/rotate_argb.cc\",\"source/rotate_common.cc\",\"source/rotate_gcc.cc\",\"source/rotate_mmi.cc\",\"source/rotate_msa.cc\",\"source/rotate_neon.cc\",\"source/rotate_neon64.cc\",\"source/rotate_win.cc\",\"source/row_any.cc\",\"source/row_common.cc\",\"source/row_gcc.cc\",\"source/row_mmi.cc\",\"source/row_msa.cc\",\"source/row_neon.cc\",\"source/row_neon64.cc\",\"source/row_win.cc\",\"source/scale.cc\",\"source/scale_any.cc\",\"source/scale_argb.cc\",\"source/scale_common.cc\",\"source/scale_gcc.cc\",\"source/scale_mmi.cc\",\"source/scale_msa.cc\",\"source/scale_neon.cc\",\"source/scale_neon64.cc\",\"source/scale_uv.cc\",\"source/scale_win.cc\",\"source/video_common.cc\"]}],\"fullName\":\"libyuv.a\",\"linkerLanguage\":\"CXX\",\"name\":\"yuv\",\"sourceDirectory\":\"D:/workspace/Learning/libyuv/src/main/cpp/libyuv\",\"sysroot\":\"D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot\",\"type\":\"STATIC_LIBRARY\"},{\"artifacts\":[\"D:/workspace/Learning/libyuv/build/intermediates/cmake/release/obj/arm64-v8a/libyuv.so\"],\"buildDirectory\":\"D:/workspace/Learning/libyuv/.cxx/cmake/release/arm64-v8a/build\",\"fileGroups\":[{\"compileFlags\":\"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE\u003d2 -Wformat -Werror\u003dformat-security   -O2 -DNDEBUG  -fPIC  \",\"defines\":[\"yuv_shared_EXPORTS\"],\"includePath\":[{\"path\":\"D:/workspace/Learning/libyuv/src/main/cpp/libyuv/include\"}],\"isGenerated\":false,\"language\":\"CXX\",\"sources\":[\"source/compare.cc\",\"source/compare_common.cc\",\"source/compare_gcc.cc\",\"source/compare_mmi.cc\",\"source/compare_msa.cc\",\"source/compare_neon.cc\",\"source/compare_neon64.cc\",\"source/compare_win.cc\",\"source/convert.cc\",\"source/convert_argb.cc\",\"source/convert_from.cc\",\"source/convert_from_argb.cc\",\"source/convert_jpeg.cc\",\"source/convert_to_argb.cc\",\"source/convert_to_i420.cc\",\"source/cpu_id.cc\",\"source/mjpeg_decoder.cc\",\"source/mjpeg_validate.cc\",\"source/planar_functions.cc\",\"source/rotate.cc\",\"source/rotate_any.cc\",\"source/rotate_argb.cc\",\"source/rotate_common.cc\",\"source/rotate_gcc.cc\",\"source/rotate_mmi.cc\",\"source/rotate_msa.cc\",\"source/rotate_neon.cc\",\"source/rotate_neon64.cc\",\"source/rotate_win.cc\",\"source/row_any.cc\",\"source/row_common.cc\",\"source/row_gcc.cc\",\"source/row_mmi.cc\",\"source/row_msa.cc\",\"source/row_neon.cc\",\"source/row_neon64.cc\",\"source/row_win.cc\",\"source/scale.cc\",\"source/scale_any.cc\",\"source/scale_argb.cc\",\"source/scale_common.cc\",\"source/scale_gcc.cc\",\"source/scale_mmi.cc\",\"source/scale_msa.cc\",\"source/scale_neon.cc\",\"source/scale_neon64.cc\",\"source/scale_uv.cc\",\"source/scale_win.cc\",\"source/video_common.cc\"]}],\"fullName\":\"libyuv.so\",\"linkFlags\":\"-Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id\u003dsha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments\",\"linkLibraries\":\"-latomic -lm\",\"linkerLanguage\":\"CXX\",\"name\":\"yuv_shared\",\"sourceDirectory\":\"D:/workspace/Learning/libyuv/src/main/cpp/libyuv\",\"sysroot\":\"D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot\",\"type\":\"SHARED_LIBRARY\"}]}]}],\"cookie\":\"\",\"inReplyTo\":\"codemodel\",\"type\":\"reply\"}\n",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "done executing cmake",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "write command file D:\\workspace\\Learning\\libyuv\\.cxx\\cmake\\release\\arm64-v8a\\build_command.txt",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "JSON generation completed without problems",
+    "file": "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "tag": "release|arm64-v8a",
+    "diagnosticCode": "UNKNOWN"
+  }
+]

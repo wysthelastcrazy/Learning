@@ -2,10 +2,14 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="1.7">
-      <module name="Learning.AndroidBase" target="1.8" />
-      <module name="Learning.app" target="1.8" />
-      <module name="Learning.third_party_sourceCode.Okhttp" target="1.8" />
-      <module name="Learning.third_party_sourceCode.RxJava" target="1.8" />
+      <module name="Learning.AndroidBase" target="11" />
+      <module name="Learning.app" target="11" />
+      <module name="Learning.avdemo" target="11" />
+      <module name="Learning.commonLib" target="11" />
+      <module name="Learning.liblame" target="11" />
+      <module name="Learning.libyuv" target="11" />
+      <module name="Learning.third_party_sourceCode.Okhttp" target="11" />
+      <module name="Learning.third_party_sourceCode.RxJava" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

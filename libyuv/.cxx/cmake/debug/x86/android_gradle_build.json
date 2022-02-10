@@ -1,0 +1,80 @@
+{
+  "stringTable": {},
+  "buildFiles": [
+    "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\CMakeLists.txt",
+    "D:\\workspace\\Learning\\libyuv\\src\\main\\cpp\\libyuv\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "D:\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+      "-C",
+      "D:\\workspace\\Learning\\libyuv\\.cxx\\cmake\\debug\\x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "D:\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+    "-C",
+    "D:\\workspace\\Learning\\libyuv\\.cxx\\cmake\\debug\\x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "yuv_utils-Debug-x86": {
+      "buildCommandComponents": [
+        "D:\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+        "-C",
+        "D:\\workspace\\Learning\\libyuv\\.cxx\\cmake\\debug\\x86",
+        "yuv_utils"
+      ],
+      "buildType": "debug",
+      "abi": "x86",
+      "artifactName": "yuv_utils",
+      "output": "D:\\workspace\\Learning\\libyuv\\build\\intermediates\\cmake\\debug\\obj\\x86\\libyuv_utils.so",
+      "runtimeFiles": []
+    },
+    "yuv-Debug-x86": {
+      "buildCommandComponents": [
+        "D:\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+        "-C",
+        "D:\\workspace\\Learning\\libyuv\\.cxx\\cmake\\debug\\x86",
+        "yuv"
+      ],
+      "buildType": "debug",
+      "abi": "x86",
+      "artifactName": "yuv",
+      "output": "D:\\workspace\\Learning\\libyuv\\.cxx\\cmake\\debug\\x86\\build\\libyuv.a"
+    },
+    "yuvconvert-Debug-x86": {
+      "buildCommandComponents": [
+        "D:\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+        "-C",
+        "D:\\workspace\\Learning\\libyuv\\.cxx\\cmake\\debug\\x86",
+        "yuvconvert"
+      ],
+      "buildType": "debug",
+      "abi": "x86",
+      "artifactName": "yuvconvert",
+      "output": "D:\\workspace\\Learning\\libyuv\\build\\intermediates\\cmake\\debug\\obj\\x86\\yuvconvert",
+      "runtimeFiles": []
+    },
+    "yuv_shared-Debug-x86": {
+      "buildCommandComponents": [
+        "D:\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+        "-C",
+        "D:\\workspace\\Learning\\libyuv\\.cxx\\cmake\\debug\\x86",
+        "yuv_shared"
+      ],
+      "buildType": "debug",
+      "abi": "x86",
+      "artifactName": "yuv_shared",
+      "output": "D:\\workspace\\Learning\\libyuv\\build\\intermediates\\cmake\\debug\\obj\\x86\\libyuv.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {},
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cc",
+    "cpp"
+  ]
+}

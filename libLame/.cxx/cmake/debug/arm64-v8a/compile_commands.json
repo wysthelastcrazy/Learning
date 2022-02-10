@@ -1,0 +1,127 @@
+[
+{
+  "directory": "D:/workspace/Learning/liblame/.cxx/cmake/debug/arm64-v8a",
+  "command": "D:\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=aarch64-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dlame_utils_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\lame_utils.dir\\LameJni.cpp.o -c D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\LameJni.cpp",
+  "file": "D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\LameJni.cpp"
+},
+
+{
+  "directory": "D:/workspace/Learning/liblame/.cxx/cmake/debug/arm64-v8a",
+  "command": "D:\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=aarch64-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dlame_utils_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -DSTDC_HEADERS -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\lame_utils.dir\\lame\\bitstream.c.o   -c D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\bitstream.c",
+  "file": "D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\bitstream.c"
+},
+
+{
+  "directory": "D:/workspace/Learning/liblame/.cxx/cmake/debug/arm64-v8a",
+  "command": "D:\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=aarch64-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dlame_utils_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -DSTDC_HEADERS -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\lame_utils.dir\\lame\\encoder.c.o   -c D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\encoder.c",
+  "file": "D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\encoder.c"
+},
+
+{
+  "directory": "D:/workspace/Learning/liblame/.cxx/cmake/debug/arm64-v8a",
+  "command": "D:\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=aarch64-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dlame_utils_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -DSTDC_HEADERS -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\lame_utils.dir\\lame\\fft.c.o   -c D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\fft.c",
+  "file": "D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\fft.c"
+},
+
+{
+  "directory": "D:/workspace/Learning/liblame/.cxx/cmake/debug/arm64-v8a",
+  "command": "D:\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=aarch64-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dlame_utils_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -DSTDC_HEADERS -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\lame_utils.dir\\lame\\gain_analysis.c.o   -c D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\gain_analysis.c",
+  "file": "D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\gain_analysis.c"
+},
+
+{
+  "directory": "D:/workspace/Learning/liblame/.cxx/cmake/debug/arm64-v8a",
+  "command": "D:\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=aarch64-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dlame_utils_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -DSTDC_HEADERS -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\lame_utils.dir\\lame\\id3tag.c.o   -c D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\id3tag.c",
+  "file": "D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\id3tag.c"
+},
+
+{
+  "directory": "D:/workspace/Learning/liblame/.cxx/cmake/debug/arm64-v8a",
+  "command": "D:\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=aarch64-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dlame_utils_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -DSTDC_HEADERS -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\lame_utils.dir\\lame\\lame.c.o   -c D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\lame.c",
+  "file": "D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\lame.c"
+},
+
+{
+  "directory": "D:/workspace/Learning/liblame/.cxx/cmake/debug/arm64-v8a",
+  "command": "D:\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=aarch64-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dlame_utils_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -DSTDC_HEADERS -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\lame_utils.dir\\lame\\mpglib_interface.c.o   -c D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\mpglib_interface.c",
+  "file": "D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\mpglib_interface.c"
+},
+
+{
+  "directory": "D:/workspace/Learning/liblame/.cxx/cmake/debug/arm64-v8a",
+  "command": "D:\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=aarch64-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dlame_utils_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -DSTDC_HEADERS -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\lame_utils.dir\\lame\\newmdct.c.o   -c D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\newmdct.c",
+  "file": "D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\newmdct.c"
+},
+
+{
+  "directory": "D:/workspace/Learning/liblame/.cxx/cmake/debug/arm64-v8a",
+  "command": "D:\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=aarch64-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dlame_utils_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -DSTDC_HEADERS -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\lame_utils.dir\\lame\\presets.c.o   -c D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\presets.c",
+  "file": "D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\presets.c"
+},
+
+{
+  "directory": "D:/workspace/Learning/liblame/.cxx/cmake/debug/arm64-v8a",
+  "command": "D:\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=aarch64-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dlame_utils_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -DSTDC_HEADERS -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\lame_utils.dir\\lame\\psymodel.c.o   -c D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\psymodel.c",
+  "file": "D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\psymodel.c"
+},
+
+{
+  "directory": "D:/workspace/Learning/liblame/.cxx/cmake/debug/arm64-v8a",
+  "command": "D:\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=aarch64-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dlame_utils_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -DSTDC_HEADERS -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\lame_utils.dir\\lame\\quantize.c.o   -c D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\quantize.c",
+  "file": "D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\quantize.c"
+},
+
+{
+  "directory": "D:/workspace/Learning/liblame/.cxx/cmake/debug/arm64-v8a",
+  "command": "D:\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=aarch64-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dlame_utils_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -DSTDC_HEADERS -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\lame_utils.dir\\lame\\quantize_pvt.c.o   -c D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\quantize_pvt.c",
+  "file": "D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\quantize_pvt.c"
+},
+
+{
+  "directory": "D:/workspace/Learning/liblame/.cxx/cmake/debug/arm64-v8a",
+  "command": "D:\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=aarch64-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dlame_utils_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -DSTDC_HEADERS -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\lame_utils.dir\\lame\\reservoir.c.o   -c D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\reservoir.c",
+  "file": "D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\reservoir.c"
+},
+
+{
+  "directory": "D:/workspace/Learning/liblame/.cxx/cmake/debug/arm64-v8a",
+  "command": "D:\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=aarch64-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dlame_utils_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -DSTDC_HEADERS -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\lame_utils.dir\\lame\\set_get.c.o   -c D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\set_get.c",
+  "file": "D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\set_get.c"
+},
+
+{
+  "directory": "D:/workspace/Learning/liblame/.cxx/cmake/debug/arm64-v8a",
+  "command": "D:\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=aarch64-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dlame_utils_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -DSTDC_HEADERS -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\lame_utils.dir\\lame\\tables.c.o   -c D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\tables.c",
+  "file": "D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\tables.c"
+},
+
+{
+  "directory": "D:/workspace/Learning/liblame/.cxx/cmake/debug/arm64-v8a",
+  "command": "D:\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=aarch64-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dlame_utils_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -DSTDC_HEADERS -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\lame_utils.dir\\lame\\takehiro.c.o   -c D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\takehiro.c",
+  "file": "D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\takehiro.c"
+},
+
+{
+  "directory": "D:/workspace/Learning/liblame/.cxx/cmake/debug/arm64-v8a",
+  "command": "D:\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=aarch64-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dlame_utils_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -DSTDC_HEADERS -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\lame_utils.dir\\lame\\util.c.o   -c D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\util.c",
+  "file": "D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\util.c"
+},
+
+{
+  "directory": "D:/workspace/Learning/liblame/.cxx/cmake/debug/arm64-v8a",
+  "command": "D:\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=aarch64-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dlame_utils_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -DSTDC_HEADERS -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\lame_utils.dir\\lame\\vbrquantize.c.o   -c D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\vbrquantize.c",
+  "file": "D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\vbrquantize.c"
+},
+
+{
+  "directory": "D:/workspace/Learning/liblame/.cxx/cmake/debug/arm64-v8a",
+  "command": "D:\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=aarch64-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dlame_utils_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -DSTDC_HEADERS -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\lame_utils.dir\\lame\\VbrTag.c.o   -c D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\VbrTag.c",
+  "file": "D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\VbrTag.c"
+},
+
+{
+  "directory": "D:/workspace/Learning/liblame/.cxx/cmake/debug/arm64-v8a",
+  "command": "D:\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=aarch64-none-linux-android21 --gcc-toolchain=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dlame_utils_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -DSTDC_HEADERS -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\lame_utils.dir\\lame\\version.c.o   -c D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\version.c",
+  "file": "D:\\workspace\\Learning\\liblame\\src\\main\\cpp\\lame\\version.c"
+}
+]

@@ -1,0 +1,9 @@
+Executable : D:\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe
+arguments : 
+-C
+D:\workspace\Learning\libyuv\.cxx\cmake\debug\x86
+yuv_shared
+yuv_utils
+yuvconvert
+jvmArgs : 
+
