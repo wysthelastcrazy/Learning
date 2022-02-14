@@ -314,3 +314,4 @@
 6293	6532	664103114	D:/workspace/Learning/libyuv/build/intermediates/cmake/debug/obj/arm64-v8a/yuvconvert	7260ffadbeefd326
 6218	6581	664103114	build/CMakeFiles/yuv_shared.dir/source/scale_neon64.cc.o	3fa7440d86f690d6
 6581	6722	664103114	D:/workspace/Learning/libyuv/build/intermediates/cmake/debug/obj/arm64-v8a/libyuv.so	c27a395cdd0feee9
+0	33	0	clean	da6882ba3c09f1ba
