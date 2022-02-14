@@ -1,2 +1,0 @@
-ninja: Entering directory `D:\workspace\Learning\liblame\.cxx\cmake\debug\armeabi-v7a'
-ninja: no work to do.
