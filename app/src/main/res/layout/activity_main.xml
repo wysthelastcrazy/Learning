@@ -1,19 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         tools:context=".MainActivity">
 
-    <TextView
-            android:layout_width="wrap_content"
+    <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            android:orientation="horizontal">
 
-</FrameLayout>
+        <Button
+                android:id="@+id/btn_all_usb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:onClick="getAllUsbDevices"
+                android:text="all_usb"/>
+
+        <Button
+                android:id="@+id/btn_camera_usb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:onClick="getUsbCamera"
+                android:text="usb_camera"/>
+        <Button
+                android:id="@+id/btn_audio_usb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:onClick="getUsbAudio"
+                android:text="usb_audio"/>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <Button
+                android:id="@+id/btn_check_mic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkMic"
+                android:text="checkMic"/>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/btn_music_volume_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:onClick="onMusicVolumeUp"
+                android:text="musicVolumeUp"/>
+
+        <Button
+                android:id="@+id/btn_music_volume_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:onClick="onMusicVolumeDown"
+                android:text="musicVolumeDown"
+                tools:ignore="OnClick" />
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/btn_system_volume_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:onClick="onVolumeUp"
+                android:text="volumeUp"/>
+
+        <Button
+                android:id="@+id/btn_system_volume_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:onClick="onVolumeDown"
+                android:text="volumeDown"/>
+    </LinearLayout>
+    <ImageView
+            android:id="@+id/img_test"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_launcher_background"/>
+    <FrameLayout
+            android:id="@+id/fl_container"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#ff0000"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <Button
+                android:id="@+id/btn_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addTextureView"
+                android:text="add"/>
+        <Button
+                android:id="@+id/btn_remove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="removeTextureView"
+                android:text="remove"/>
+        <Button
+                android:id="@+id/btn_gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="gone"
+                android:text="gone"/>
+        <Button
+                android:id="@+id/btn_visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="visible"
+                android:text="gone"/>
+    </LinearLayout>
+    <com.wys.learning.view.PDuffXFermodeView
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+</LinearLayout>

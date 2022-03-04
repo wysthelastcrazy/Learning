@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CameraActivity">
+
+
+    <TextureView
+            android:id="@+id/camera_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    <ImageView
+            android:id="@+id/img_show"
+            android:layout_width="320dp"
+            android:layout_height="180dp"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="center"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+
+    <LinearLayout
+            android:id="@+id/ll_group_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/btn_openCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="openCamera"
+                android:text="openCamera" />
+
+        <Button
+                android:id="@+id/btn_closeCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="closeCamera"
+                android:text="closeCamera" />
+    </LinearLayout>
+</RelativeLayout>
