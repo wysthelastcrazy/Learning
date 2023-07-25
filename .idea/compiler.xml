@@ -6,6 +6,7 @@
       <module name="Learning.app" target="11" />
       <module name="Learning.avdemo" target="11" />
       <module name="Learning.commonLib" target="11" />
+      <module name="Learning.jetpack" target="11" />
       <module name="Learning.liblame" target="11" />
       <module name="Learning.libyuv" target="11" />
       <module name="Learning.third_party_sourceCode.Okhttp" target="11" />

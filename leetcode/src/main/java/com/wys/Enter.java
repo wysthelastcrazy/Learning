@@ -1,7 +1,5 @@
 package com.wys;
 
-import javax.jws.soap.SOAPBinding;
-import javax.swing.SortOrder;
 
 /**
  * @author wangyasheng
@@ -26,5 +24,16 @@ public class Enter {
         for (int i = 0; i < arr.length; i++){
             System.out.print(arr[i]+" ");
         }
+        String s = "12345";
+        f(s,null);
+    }
+    public static String f(String str1, String str2){
+
+        int i = charToInt(str1.charAt(0));
+        System.out.print("i = " + i);
+        return null;
+    }
+    public static int charToInt(char c){
+        return c - '0';
     }
 }

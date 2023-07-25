@@ -1,6 +1,6 @@
 package com.wys.offer.tree;
 
-import com.sun.tools.corba.se.idl.InterfaceGen;
+
 import com.wys.offer.tree.node.TreeNode;
 
 import java.util.ArrayList;

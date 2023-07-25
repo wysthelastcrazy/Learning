@@ -1,6 +1,7 @@
 package com.wys.learning
 
 import android.os.Bundle
+import android.provider.Settings.Global
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import java.util.concurrent.Callable
