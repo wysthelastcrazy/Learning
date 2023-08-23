@@ -1,17 +1,18 @@
-apply plugin: 'com.android.application'
-
-apply plugin: 'kotlin-android'
-
-apply plugin: 'kotlin-android-extensions'
-
+plugins{
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
 android {
-    compileSdkVersion 30
+    compileSdk 33
     defaultConfig {
         applicationId "com.wys.learning"
-        minSdkVersion 23
-        targetSdkVersion 29
+        minSdk 24
+        targetSdk 33
         versionCode 1
         versionName "1.0"
+        ndk {
+            abiFilters 'armeabi-v7a'
+        }
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
     buildTypes {
@@ -23,6 +24,9 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11
+    }
+    buildFeatures {
+        viewBinding = true
     }
 }
 
@@ -43,4 +47,5 @@ dependencies {
 //    implementation project(':avdemo')
     implementation project(':libyuv')
     implementation project(':liblame')
+    implementation project(':camera')
 }

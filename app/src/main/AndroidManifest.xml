@@ -20,23 +20,30 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/CustomAnimTheme">
-        <activity android:name=".StartRemoteAssistanceActivity"
+        <activity
+                android:name=".KeyboardActivity"
                 android:configChanges="keyboardHidden|orientation|screenSize|uiMode"
                 android:launchMode="singleTask"
-                android:screenOrientation="unspecified">
+                android:exported="false" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="com.keyboard" />
             </intent-filter>
         </activity>
-        <activity android:name=".openGL.OpenGLActivity"></activity>
-        <activity android:name=".FutureActivity" />
-        <activity android:name=".CameraActivity">
+        <activity
+                android:name=".StartRemoteAssistanceActivity"
+                android:configChanges="keyboardHidden|orientation|screenSize|uiMode"
+                android:launchMode="singleTask"
+                android:screenOrientation="unspecified">
 
         </activity>
+        <activity android:name=".openGL.OpenGLActivity" />
+        <activity android:name=".FutureActivity" />
+        <activity android:name=".CameraActivity"></activity>
         <activity android:name=".MainActivity2" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

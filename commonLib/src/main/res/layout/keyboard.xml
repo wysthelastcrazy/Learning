@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:orientation="vertical"
+    android:background="@drawable/bg_keyboard">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/one"
+            style="@style/KeyBoardItemTextView"
+            android:background="@drawable/keyboard_item_selector"
+            android:text="1" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#0dFFFFFF" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/two"
+            style="@style/KeyBoardItemTextView"
+            android:background="@drawable/keyboard_item_selector"
+            android:text="2" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#0dFFFFFF" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/three"
+            style="@style/KeyBoardItemTextView"
+            android:background="@drawable/keyboard_item_selector"
+            android:text="3" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#0dFFFFFF" />
+
+        <FrameLayout
+            android:id="@+id/fl_star"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/star"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/keyboard_item_selector"
+                android:text="*" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="45dp"
+                android:text="(删除)" />
+        </FrameLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#0dFFFFFF" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/four"
+            style="@style/KeyBoardItemTextView"
+            android:background="@drawable/keyboard_item_selector"
+            android:text="4" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#0dFFFFFF" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/five"
+            style="@style/KeyBoardItemTextView"
+            android:background="@drawable/keyboard_item_selector"
+            android:text="5" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#0dFFFFFF" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/six"
+            style="@style/KeyBoardItemTextView"
+            android:background="@drawable/keyboard_item_selector"
+            android:text="6" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#0dFFFFFF" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/zero"
+            style="@style/KeyBoardItemTextView"
+            android:background="@drawable/keyboard_item_selector"
+            android:text="0" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#0dFFFFFF" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/seven"
+            style="@style/KeyBoardItemTextView"
+            android:background="@drawable/keyboard_item_selector"
+            android:text="7" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#0dFFFFFF" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/eight"
+            style="@style/KeyBoardItemTextView"
+            android:background="@drawable/keyboard_item_selector"
+            android:text="8" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#0dFFFFFF" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/nine"
+            style="@style/KeyBoardItemTextView"
+            android:background="@drawable/keyboard_item_selector"
+            android:text="9" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#0dFFFFFF" />
+
+        <FrameLayout
+            android:id="@+id/fl_pound"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/pound"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/keyboard_item_selector"
+                android:text="#" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="45dp"
+                android:text="(确定)" />
+        </FrameLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -5,6 +5,7 @@
       <module name="Learning.AndroidBase" target="11" />
       <module name="Learning.app" target="11" />
       <module name="Learning.avdemo" target="11" />
+      <module name="Learning.camera" target="11" />
       <module name="Learning.commonLib" target="11" />
       <module name="Learning.jetpack" target="11" />
       <module name="Learning.liblame" target="11" />
