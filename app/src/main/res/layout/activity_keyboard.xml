@@ -10,7 +10,8 @@
             android:id="@+id/keyboard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"/>
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="300dp"/>
     <com.example.commonlib.views.FaceView
             android:id="@+id/faceView"
             android:layout_width="wrap_content"
@@ -19,4 +20,9 @@
             android:id="@+id/btn_goto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+    <EditText
+            android:id="@+id/edit_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
 </RelativeLayout>
