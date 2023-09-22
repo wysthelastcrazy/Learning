@@ -69,6 +69,7 @@ class CameraActivity : AppCompatActivity() {
             }
 
             override fun onPreviewFrame(frameDate: ByteArray, type: Int, width: Int, height: Int) {
+                LogUtil.i(TAG,"onPreviewFrame+++++++++++++")
 //                Rx.runUI{
 //                    val bitamp = yuvToBitmap2(frameDate,type, width,height)
 //                    mImageViewShow.setImageBitmap(bitamp)
