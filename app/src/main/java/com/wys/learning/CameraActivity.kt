@@ -221,6 +221,9 @@ class CameraActivity : AppCompatActivity() {
         return bitmap
     }
 
+    private fun test(){
+
+    }
     override fun onDestroy() {
         super.onDestroy()
         mOrientationListener.disable()
