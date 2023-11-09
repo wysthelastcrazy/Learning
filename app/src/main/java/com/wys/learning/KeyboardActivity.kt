@@ -9,6 +9,7 @@ import android.view.MotionEvent
 import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.example.commonlib.log.LogUtil
 import com.example.commonlib.views.FaceView
 import com.example.commonlib.views.KeyboardView
 import com.wys.learning.utils.IntentUtils
@@ -32,12 +33,10 @@ class KeyboardActivity : AppCompatActivity(),
         val btn:Button = findViewById(R.id.btn_goto)
 //        btn.visibility = View.GONE
         btn.setOnClickListener {
-//            IntentUtils.goToKeyboardActivity()
-//            val rect2 = Rect(300,500,500,900)
-//            faceView.clear()
-//            faceView.addRect(rect2)
-//            faceView.invalidate()
-            keyboardView.performClick('1')
+//            keyboardView.performClick('1')
+            while (true){
+                LogUtil.d("","11111")
+            }
         }
         ScreenSittingTimeoutHelper.addScreenTimeoutListener(this)
     }

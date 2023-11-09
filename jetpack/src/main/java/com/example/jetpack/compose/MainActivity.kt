@@ -37,15 +37,16 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Android")
+                    MainUI()
                 }
             }
         }
     }
 }
-
+@Preview
 @Composable
-fun Greeting(name: String) {
+fun MainUI() {
+    //
     Column() {
         var number by remember {
             mutableStateOf(0)
@@ -67,7 +68,7 @@ fun Counter(number: Int, onClickValue: () -> Unit){
     Column() {
         Text(text = "当前数值：$number")
         Button(onClick = onClickValue ) {
-            Text(text = "add")
+            Text(text = "add", color = Color.Black)
         }
     }
 }
@@ -80,7 +81,7 @@ fun ItemView(title : String){
         .background(Color.Red)
         .padding(10.dp)
     ) {
-        Text(text = title, fontSize = 16.sp, color = Color.White, modifier = Modifier.weight(1f))
+        Text(text = title, fontSize = 16.sp, color = Color.White, modifier = Modifier.weight(1f,true))
         Button(onClick = { 
             expanded = !expanded
         }) {
@@ -95,14 +96,6 @@ fun ItemView(title : String){
 fun getData():List<String>{
     return List(20){
         "Compose课程第${it.add()}课，快来学习吧～"
-    }
-}
-
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    LearningTheme {
-        Greeting("Android")
     }
 }
 //扩展函数
